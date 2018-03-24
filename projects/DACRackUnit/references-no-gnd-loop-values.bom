@@ -1,0 +1,9 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/references-no-gnd-loop.sch am 27.09.13 21:16
+
+Menge Wert      Device          Bauteile                 
+4     2.2uF     CPOL-EUB45181B  CP11, CP12, CP21, CP22   
+1     10uF      CPOL-EUB45181B  CP1                      
+5     100nF     C-EU050-025X075 C1_, C11, C12, C21, C22  
+4     INA118P   INA118P         IC0, IC1, IC2, IC3       
+5     SMB-50OHM SMB-50OHM       P0_IN, RP0, RP1, RP2, RP3
+1     WAGO-3    WAGO-3          SP0                      

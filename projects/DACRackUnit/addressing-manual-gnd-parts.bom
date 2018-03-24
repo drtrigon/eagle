@@ -1,0 +1,40 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/addressing-manual-gnd.sch am 30.07.13 20:55
+
+Bauteil Wert          Device          Package       Description                         
+C0      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C1      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C2      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C3      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C4      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+CP0     10uF          CPOL-EUB45181B  B45181B       POLARIZED CAPACITOR, European symbol
+CPORT0  DIN-41651-20P DIN-41651-20P   DIN-41651-20P                                     
+IC0     MC14585       MC14585         PDIP-16                                           
+IC1     MC14585       MC14585         PDIP-16                                           
+IC2     MC14585       MC14585         PDIP-16                                           
+IC3     MC14585       MC14585         PDIP-16                                           
+ICU0    MC14069       MC14069         PDIP-14                                           
+PORT0   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT1   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT2   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT3   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+R1      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R2      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R3      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R4      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R5      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R6      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R7      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R8      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R9      9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R10     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R11     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R12     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R13     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R14     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R15     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+R16     9k9           R-EU_0207/12    0207/12       RESISTOR, European symbol           
+SP1     WAGO-3        WAGO-3          WAGO-3                                            
+SW0     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW1     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW2     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW3     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          

@@ -1,0 +1,236 @@
+Netlist
+
+Exported from addressing-manual-gnd.sch at 31.07.13 22:41
+
+EAGLE Version 5.12.0 Copyright (c) 1988-2011 CadSoft
+
+Net      Part     Pad      Pin        Sheet
+
++3V3     C0       1        1          1
+         C1       1        1          1
+         C2       1        1          1
+         C3       1        1          1
+         C4       1        1          1
+         CP0      +        +          1
+         IC0      VDD$16   VDD$16     1
+         IC1      VDD$16   VDD$16     1
+         IC2      VDD$16   VDD$16     1
+         IC3      VDD$16   VDD$16     1
+         ICU0     VDD$14   VDD$14     1
+         PORT0    P$6      P$6        1
+         PORT0    P$7      P$7        1
+         PORT1    P$6      P$6        1
+         PORT1    P$7      P$7        1
+         PORT2    P$6      P$6        1
+         PORT2    P$7      P$7        1
+         PORT3    P$6      P$6        1
+         PORT3    P$7      P$7        1
+         SP1      P$3      P$3        1
+         SW0      1        1          1
+         SW0      2        2          1
+         SW0      3        3          1
+         SW0      4        4          1
+         SW1      1        1          1
+         SW1      2        2          1
+         SW1      3        3          1
+         SW1      4        4          1
+         SW2      1        1          1
+         SW2      2        2          1
+         SW2      3        3          1
+         SW2      4        4          1
+         SW3      1        1          1
+         SW3      2        2          1
+         SW3      3        3          1
+         SW3      4        4          1
+
++5V      CPORT0   P$2      P$2        1
+         SP1      P$1      P$1        1
+
+B0.0     IC0      B0$11    B0$11      1
+         R1       2        2          1
+         SW0      8        8          1
+
+B0.1     IC0      B1$9     B1$9       1
+         R2       2        2          1
+         SW0      7        7          1
+
+B0.2     IC0      B2$1     B2$1       1
+         R3       2        2          1
+         SW0      6        6          1
+
+B0.3     IC0      B3$14    B3$14      1
+         R4       2        2          1
+         SW0      5        5          1
+
+B1.0     IC1      B0$11    B0$11      1
+         R5       2        2          1
+         SW1      8        8          1
+
+B1.1     IC1      B1$9     B1$9       1
+         R6       2        2          1
+         SW1      7        7          1
+
+B1.2     IC1      B2$1     B2$1       1
+         R7       2        2          1
+         SW1      6        6          1
+
+B1.3     IC1      B3$14    B3$14      1
+         R8       2        2          1
+         SW1      5        5          1
+
+B2.0     IC2      B0$11    B0$11      1
+         R9       2        2          1
+         SW2      8        8          1
+
+B2.1     IC2      B1$9     B1$9       1
+         R10      2        2          1
+         SW2      7        7          1
+
+B2.2     IC2      B2$1     B2$1       1
+         R11      2        2          1
+         SW2      6        6          1
+
+B2.3     IC2      B3$14    B3$14      1
+         R12      2        2          1
+         SW2      5        5          1
+
+B3.0     IC3      B0$11    B0$11      1
+         R13      2        2          1
+         SW3      8        8          1
+
+B3.1     IC3      B1$9     B1$9       1
+         R14      2        2          1
+         SW3      7        7          1
+
+B3.2     IC3      B2$1     B2$1       1
+         R15      2        2          1
+         SW3      6        6          1
+
+B3.3     IC3      B3$14    B3$14      1
+         R16      2        2          1
+         SW3      5        5          1
+
+CS       IC0      (A=B)_IN$6 (A=B)_IN$6 1
+         IC1      (A=B)_IN$6 (A=B)_IN$6 1
+         IC2      (A=B)_IN$6 (A=B)_IN$6 1
+         IC3      (A=B)_IN$6 (A=B)_IN$6 1
+         ICU0     OUT6$12  OUT6$12    1
+
+CS0      IC0      (A=B)_OUT$3 (A=B)_OUT$3 1
+         ICU0     IN1$1    IN1$1      1
+
+CS0_INV  ICU0     OUT1$2   OUT1$2     1
+         PORT0    P$1      P$1        1
+
+CS1      IC1      (A=B)_OUT$3 (A=B)_OUT$3 1
+         ICU0     IN2$3    IN2$3      1
+
+CS1_INV  ICU0     OUT2$4   OUT2$4     1
+         PORT1    P$1      P$1        1
+
+CS2      IC2      (A=B)_OUT$3 (A=B)_OUT$3 1
+         ICU0     IN3$5    IN3$5      1
+
+CS2_INV  ICU0     OUT3$6   OUT3$6     1
+         PORT2    P$1      P$1        1
+
+CS3      IC3      (A=B)_OUT$3 (A=B)_OUT$3 1
+         ICU0     IN4$9    IN4$9      1
+
+CS3_INV  ICU0     OUT4$8   OUT4$8     1
+         PORT3    P$1      P$1        1
+
+CS_INV   CPORT0   P$13     P$13       1
+         ICU0     IN6$13   IN6$13     1
+
+GND      C0       2        2          1
+         C1       2        2          1
+         C2       2        2          1
+         C3       2        2          1
+         C4       2        2          1
+         CP0      -        -          1
+         CPORT0   P$1      P$1        1
+         IC0      (A<B)_IN$5 (A<B)_IN$5 1
+         IC0      (A>B)_IN$4 (A>B)_IN$4 1
+         IC0      VSS$8    VSS$8      1
+         IC1      (A<B)_IN$5 (A<B)_IN$5 1
+         IC1      (A>B)_IN$4 (A>B)_IN$4 1
+         IC1      VSS$8    VSS$8      1
+         IC2      (A<B)_IN$5 (A<B)_IN$5 1
+         IC2      (A>B)_IN$4 (A>B)_IN$4 1
+         IC2      VSS$8    VSS$8      1
+         IC3      (A<B)_IN$5 (A<B)_IN$5 1
+         IC3      (A>B)_IN$4 (A>B)_IN$4 1
+         IC3      VSS$8    VSS$8      1
+         ICU0     IN5$11   IN5$11     1
+         ICU0     VSS$7    VSS$7      1
+         PORT0    P$5      P$5        1
+         PORT1    P$5      P$5        1
+         PORT2    P$5      P$5        1
+         PORT3    P$5      P$5        1
+         R1       1        1          1
+         R10      1        1          1
+         R11      1        1          1
+         R12      1        1          1
+         R13      1        1          1
+         R14      1        1          1
+         R15      1        1          1
+         R16      1        1          1
+         R2       1        1          1
+         R3       1        1          1
+         R4       1        1          1
+         R5       1        1          1
+         R6       1        1          1
+         R7       1        1          1
+         R8       1        1          1
+         R9       1        1          1
+         SP1      P$2      P$2        1
+
+P4       CPORT0   P$8      P$8        1
+         IC0      A0$10    A0$10      1
+         IC1      A0$10    A0$10      1
+         IC2      A0$10    A0$10      1
+         IC3      A0$10    A0$10      1
+
+P5       CPORT0   P$9      P$9        1
+         IC0      A1$7     A1$7       1
+         IC1      A1$7     A1$7       1
+         IC2      A1$7     A1$7       1
+         IC3      A1$7     A1$7       1
+
+P6       CPORT0   P$10     P$10       1
+         IC0      A2$2     A2$2       1
+         IC1      A2$2     A2$2       1
+         IC2      A2$2     A2$2       1
+         IC3      A2$2     A2$2       1
+
+P7       CPORT0   P$11     P$11       1
+         IC0      A3$15    A3$15      1
+         IC1      A3$15    A3$15      1
+         IC2      A3$15    A3$15      1
+         IC3      A3$15    A3$15      1
+
+RESET_INV CPORT0   P$4      P$4        1
+         PORT0    P$9      P$9        1
+         PORT1    P$9      P$9        1
+         PORT2    P$9      P$9        1
+         PORT3    P$9      P$9        1
+
+SCLK     CPORT0   P$16     P$16       1
+         PORT0    P$2      P$2        1
+         PORT1    P$2      P$2        1
+         PORT2    P$2      P$2        1
+         PORT3    P$2      P$2        1
+
+SDIN     CPORT0   P$14     P$14       1
+         PORT0    P$4      P$4        1
+         PORT1    P$4      P$4        1
+         PORT2    P$4      P$4        1
+         PORT3    P$4      P$4        1
+
+SDO      CPORT0   P$15     P$15       1
+         PORT0    P$10     P$10       1
+         PORT1    P$10     P$10       1
+         PORT2    P$10     P$10       1
+         PORT3    P$10     P$10       1
+

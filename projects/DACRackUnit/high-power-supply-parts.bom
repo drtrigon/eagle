@@ -1,0 +1,44 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/high-power-supply.sch am 26.09.13 09:49
+
+Bauteil Wert      Device          Package      Description                     
+C1      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+C2      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+C3      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+C4      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+C5      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+C6      10muF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol      
+IC1     OPA544T   OPA544T         TO220-G5     Operational Amplifier           
+IC2     OPA544T   OPA544T         TO220-G5     Operational Amplifier           
+IC3     OPA544T   OPA544T         TO220-G5     Operational Amplifier           
+IC4     LM358N    LM358N          DIL08        OP AMP also LM158; LM258; LM2904
+IC5     LM358N    LM358N          DIL08        OP AMP also LM158; LM258; LM2904
+IC6     LM358N    LM358N          DIL08        OP AMP also LM158; LM258; LM2904
+R1.A    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R1.B    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R1.C    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R1.D    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R2.A    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R2.B    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R2.C    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R2.D    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R3.A    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R3.B    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R3.C    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R3.D    25k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R4.A    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R4.B    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R5.A    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R5.B    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R6.A    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R6.B    10k ?     R-EU_0207/12    0207/12      RESISTOR, European symbol       
+R7      1M ?      R-TRIMM3296Y    RTRIM3296Y   Trimm resistor                  
+R8      1M ?      R-TRIMM3296Y    RTRIM3296Y   Trimm resistor                  
+R9      1M ?      R-TRIMM3296Y    RTRIM3296Y   Trimm resistor                  
+U$1     WAGO-3    WAGO-3          WAGO-3                                       
+U$2     WAGO-3    WAGO-3          WAGO-3                                       
+U$3     WAGO-3    WAGO-3          WAGO-3                                       
+U$4     SMB-50OHM SMB-50OHM       B-30                                         
+U$5     WAGO-3    WAGO-3          WAGO-3                                       
+U$6     SMB-50OHM SMB-50OHM       B-30                                         
+U$7     WAGO-3    WAGO-3          WAGO-3                                       
+U$8     SMB-50OHM SMB-50OHM       B-30                                         

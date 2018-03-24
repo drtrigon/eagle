@@ -1,0 +1,16 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/addressing-nand.sch am 10.12.13 07:40
+
+Menge Wert          Device          Bauteile                  
+4     1k-2k         R-EU_0207/2V    R0, R1, R2, R3            
+4     2mA (max)     LED3MM          LED0, LED1, LED2, LED3    
+4     4pins         SW_DIP-4        SW0, SW1, SW2, SW3        
+4     9k9           RN05            RN0, RN1, RN2, RN3        
+1     10uF          CPOL-EUB45181B  CP0                       
+5     100nF         C-EU050-025X075 C0, C1, C2, C3, C4        
+1     4011N         4011N           IC4                       
+1     BS170         BS170           T0_B                      
+1     BS250         BS250           T0_A                      
+4     DIN-41651-10P DIN-41651-10P   PORT0, PORT1, PORT2, PORT3
+1     DIN-41651-20P DIN-41651-20P   CPORT0                    
+4     MC14585       MC14585         IC0, IC1, IC2, IC3        
+1     WAGO-3        WAGO-3          SP1                       

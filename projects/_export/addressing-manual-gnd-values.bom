@@ -1,0 +1,12 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/addressing-manual-gnd.sch am 30.07.13 20:55
+
+Menge Wert          Device          Bauteile                                                             
+4     4pins         SW_DIP-4        SW0, SW1, SW2, SW3                                                   
+16    9k9           R-EU_0207/12    R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16
+1     10uF          CPOL-EUB45181B  CP0                                                                  
+5     100nF         C-EU050-025X075 C0, C1, C2, C3, C4                                                   
+4     DIN-41651-10P DIN-41651-10P   PORT0, PORT1, PORT2, PORT3                                           
+1     DIN-41651-20P DIN-41651-20P   CPORT0                                                               
+1     MC14069       MC14069         ICU0                                                                 
+4     MC14585       MC14585         IC0, IC1, IC2, IC3                                                   
+1     WAGO-3        WAGO-3          SP1                                                                  

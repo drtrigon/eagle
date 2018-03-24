@@ -1,0 +1,23 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/references-no-gnd-loop.sch am 27.09.13 21:16
+
+Bauteil Wert      Device          Package      Description                         
+C1_     100nF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol          
+C11     100nF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol          
+C12     100nF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol          
+C21     100nF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol          
+C22     100nF     C-EU050-025X075 C050-025X075 CAPACITOR, European symbol          
+CP1     10uF      CPOL-EUB45181B  B45181B      POLARIZED CAPACITOR, European symbol
+CP11    2.2uF     CPOL-EUB45181B  B45181B      POLARIZED CAPACITOR, European symbol
+CP12    2.2uF     CPOL-EUB45181B  B45181B      POLARIZED CAPACITOR, European symbol
+CP21    2.2uF     CPOL-EUB45181B  B45181B      POLARIZED CAPACITOR, European symbol
+CP22    2.2uF     CPOL-EUB45181B  B45181B      POLARIZED CAPACITOR, European symbol
+IC0     INA118P   INA118P         DIL08        Instrumentation Amplifier           
+IC1     INA118P   INA118P         DIL08        Instrumentation Amplifier           
+IC2     INA118P   INA118P         DIL08        Instrumentation Amplifier           
+IC3     INA118P   INA118P         DIL08        Instrumentation Amplifier           
+P0_IN   SMB-50OHM SMB-50OHM       B-30                                             
+RP0     SMB-50OHM SMB-50OHM       B-30                                             
+RP1     SMB-50OHM SMB-50OHM       B-30                                             
+RP2     SMB-50OHM SMB-50OHM       B-30                                             
+RP3     SMB-50OHM SMB-50OHM       B-30                                             
+SP0     WAGO-3    WAGO-3          WAGO-3                                           

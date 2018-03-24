@@ -1,0 +1,11 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/high-power-supply.sch am 26.09.13 09:49
+
+Menge Wert      Device          Bauteile                                                              
+3     1M ?      R-TRIMM3296Y    R7, R8, R9                                                            
+6     10k ?     R-EU_0207/12    R4.A, R4.B, R5.A, R5.B, R6.A, R6.B                                    
+6     10muF     C-EU050-025X075 C1, C2, C3, C4, C5, C6                                                
+12    25k ?     R-EU_0207/12    R1.A, R1.B, R1.C, R1.D, R2.A, R2.B, R2.C, R2.D, R3.A, R3.B, R3.C, R3.D
+3     LM358N    LM358N          IC4, IC5, IC6                                                         
+3     OPA544T   OPA544T         IC1, IC2, IC3                                                         
+3     SMB-50OHM SMB-50OHM       U$4, U$6, U$8                                                         
+5     WAGO-3    WAGO-3          U$1, U$2, U$3, U$5, U$7                                               

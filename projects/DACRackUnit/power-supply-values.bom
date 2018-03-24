@@ -1,0 +1,11 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/power-supply.sch am 17.08.13 03:07
+
+Menge Wert               Device             Bauteile                          
+2     1k                 R-TRIMM3296Y       R1, R2                            
+2     2.2uF              CPOL-EUB45181B     CP2, CP31                         
+6     10uF               CPOL-EUB45181B     CP0, CP1, CP11, CP12, CP21, CP22  
+8     100nF              C-EU050-025X075    C0, C1, C2, C3, C11, C12, C21, C22
+2     LM317              LM317TS            IC1, IC2                          
+1     SMB-50OHM          SMB-50OHM          RP0                               
+1     VREF-REF02-MAX6350 VREF-REF02-MAX6350 IC3                               
+3     WAGO-3             WAGO-3             PP0, SP0, SP1                     

@@ -1,0 +1,28 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/power-supply.sch am 17.08.13 03:06
+
+Bauteil Wert               Device             Package      Description                         
+C0      100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C1      100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C2      100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C3      100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C11     100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C12     100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C21     100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+C22     100nF              C-EU050-025X075    C050-025X075 CAPACITOR, European symbol          
+CP0     10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP1     10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP2     2.2uF              CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP11    10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP12    10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP21    10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP22    10uF               CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+CP31    2.2uF              CPOL-EUB45181B     B45181B      POLARIZED CAPACITOR, European symbol
+IC1     LM317              LM317TS            317TS        VOLTAGE REGULATOR                   
+IC2     LM317              LM317TS            317TS        VOLTAGE REGULATOR                   
+IC3     VREF-REF02-MAX6350 VREF-REF02-MAX6350 PDIP-8                                           
+PP0     WAGO-3             WAGO-3             WAGO-3                                           
+R1      1k                 R-TRIMM3296Y       RTRIM3296Y   Trimm resistor                      
+R2      1k                 R-TRIMM3296Y       RTRIM3296Y   Trimm resistor                      
+RP0     SMB-50OHM          SMB-50OHM          B-30                                             
+SP0     WAGO-3             WAGO-3             WAGO-3                                           
+SP1     WAGO-3             WAGO-3             WAGO-3                                           

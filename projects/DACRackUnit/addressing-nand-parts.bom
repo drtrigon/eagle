@@ -1,0 +1,38 @@
+Stückliste exportiert aus /home/ursin/eagle/DACRackUnit/addressing-nand.sch am 10.12.13 07:40
+
+Bauteil Wert          Device          Package       Description                         
+C0      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C1      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C2      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C3      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+C4      100nF         C-EU050-025X075 C050-025X075  CAPACITOR, European symbol          
+CP0     10uF          CPOL-EUB45181B  B45181B       POLARIZED CAPACITOR, European symbol
+CPORT0  DIN-41651-20P DIN-41651-20P   DIN-41651-20P                                     
+IC0     MC14585       MC14585         PDIP-16                                           
+IC1     MC14585       MC14585         PDIP-16                                           
+IC2     MC14585       MC14585         PDIP-16                                           
+IC3     MC14585       MC14585         PDIP-16                                           
+IC4     4011N         4011N           DIL14         Quad 2-input NAND                   
+LED0    2mA (max)     LED3MM          LED3MM        LED                                 
+LED1    2mA (max)     LED3MM          LED3MM        LED                                 
+LED2    2mA (max)     LED3MM          LED3MM        LED                                 
+LED3    2mA (max)     LED3MM          LED3MM        LED                                 
+PORT0   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT1   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT2   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+PORT3   DIN-41651-10P DIN-41651-10P   DIN-41651-10P                                     
+R0      1k-2k         R-EU_0207/2V    0207/2V       RESISTOR, European symbol           
+R1      1k-2k         R-EU_0207/2V    0207/2V       RESISTOR, European symbol           
+R2      1k-2k         R-EU_0207/2V    0207/2V       RESISTOR, European symbol           
+R3      1k-2k         R-EU_0207/2V    0207/2V       RESISTOR, European symbol           
+RN0     9k9           RN05            RN-6          RESISTOR NETWORK                    
+RN1     9k9           RN05            RN-6          RESISTOR NETWORK                    
+RN2     9k9           RN05            RN-6          RESISTOR NETWORK                    
+RN3     9k9           RN05            RN-6          RESISTOR NETWORK                    
+SP1     WAGO-3        WAGO-3          WAGO-3                                            
+SW0     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW1     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW2     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+SW3     4pins         SW_DIP-4        EDG-04        DIP SWITCH                          
+T0_A    BS250         BS250           SOT54E        P-CHANNEL MOS FET                   
+T0_B    BS170         BS170           SOT54E        N-CHANNEL MOS FET                   
