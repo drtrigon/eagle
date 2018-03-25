@@ -1,0 +1,12 @@
+Documentation		$EAGLEDIR/doc
+Libraries		$EAGLEDIR/lbr:$HOME/eagle/lbr
+Design Rules		$EAGLEDIR/dru
+User Language Programs	$EAGLEDIR/ulp
+Scripts			$EAGLEDIR/scr
+CAM Jobs		$EAGLEDIR/cam
+Projects		$HOME/eagle/projects:$EAGLEDIR/projects/examples
+
+If you get a message the directories do not exist yet you need to clone the
+$HOME/eagle directory from git repo first:
+$ cd ~
+$ git clone ... eagle
