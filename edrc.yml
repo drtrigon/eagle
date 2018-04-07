@@ -1,0 +1,3 @@
+eagle:
+  drc:
+  - file: "projects/Drone_MultiWii/FlightController.brd"
