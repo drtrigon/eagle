@@ -2,9 +2,11 @@
 ### Drone_MultiWii / FlightController
 [![design rule check status](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/status.svg)](https://edrc.me/g/drtrigon/eagle)
 
-https://github.com/drtrigon/sketchbook/tree/master/MultiWii_2_4
+https://github.com/drtrigon/sketchbook/tree/master/MultiWii_2_4: [![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
 
 [![projects/Blattdurchmesser/Blattdurchmesser.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/ethz-pll-eagle/img/file/projects%2FBlattdurchmesser%2FBlattdurchmesser.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/ethz-pll-eagle)
+
+(might make sense to split projects off into separate repos/submodules)
 
 ## Setup
 
@@ -29,15 +31,15 @@ origin  /data/mount/gvfs/smb-share:server=.../01git/eagle.git/ (push)
 origin  https://github.com/drtrigon/eagle.git (push)
 ```
 
-### Enable Travis CI for a Repository (for Eagle)
+### Enable EDRC.ME for a Repository (for Eagle)
+http://www.edrc.me/docs/
+
+### Enable Travis CI for a Repository (for Eagle) - unstable
 https://github.com/drtrigon/test-eagle-edrc/blob/master/.travis.yml (does not work reliably yet)
 
 Login to Travis-CI using the GitHub account and enable Travis-CI for the given repo.
 
 Add a .travis.yml file to your project, commit, pull/push and enjoy.
-
-### Enable EDRC.ME for a Repository (for Eagle)
-http://www.edrc.me/docs/
 
 ### Further Info
 https://github.com/drtrigon/test-eagle-edrc
