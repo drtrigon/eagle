@@ -1,9 +1,9 @@
 ## Projekte
 ### Drone_MultiWii / FlightController
 [![design rule check status](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/status.svg)](https://edrc.me/g/drtrigon/eagle)
-
 [![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
-(https://github.com/drtrigon/sketchbook)
+
+https://github.com/drtrigon/sketchbook
 
 [![projects/Drone_MultiWii/FlightController.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDrone_MultiWii%2FFlightController.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
@@ -21,7 +21,7 @@ See also; https://steveperkins.com/migrating-projects-from-github-to-gitlab/
 and set this repo up use:
 ```
 $ git clone file://///data/mount/gvfs/smb-share:server=.../01git/eagle.git
-$ cd sketchbook
+$ cd eagle
 $ git remote set-url --add origin https://github.com/drtrigon/eagle.git
 ```
 you can check the settings with:
