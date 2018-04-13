@@ -1,0 +1,146 @@
+# $GIT_USER and $GIT_PASS (hide) in Settings > Environment Variables
+
+# https://github.com/ethz-pll/Blattdurchmesser/blob/master/.travis.yml
+# https://github.com/nickandrew/docker-eagle/blob/master/Dockerfile
+# http://dangerousprototypes.com/blog/2015/06/04/help-with-xvfb-eagle-and-permissions-on-ubuntu/
+# http://elementalselenium.com/tips/38-headless
+# https://www.autodesk.com/products/eagle/blog/how-to-install-autodesk-eagle-on-windows-mac-and-linux/
+
+# https://github.com/drtrigon/ethz-pll-eagle/blob/master/eagle-makefile.py
+
+# TODO: drc & erc checks
+# TODO: auto-router as example
+
+#language: c
+language: generic
+#sudo: required
+#dist: trusty
+
+# blocklist
+branches:
+  except:
+  - result/travis
+
+env:
+  global:
+    - BOARD_FILE=projects/Drone_MultiWii/FlightController
+    - GERBER_CAM_FILE=gerb274x.cam
+    #- GERBER_CAM_FILE=gerb274x-mill-drill.cam
+    - EXCELLON_CAM_FILE=excellon.cam
+    - ULP_BOM_FILE=bom.ulp
+#  matrix:
+#    - BOARD="arduino:avr:uno"
+
+before_install:
+  # setup a pseudo-display
+  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
+  - sleep 3
+  - export DISPLAY=:1.0
+  - sudo apt-get install xdotool
+  # eagle >= 8
+  #- wget https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_8.7.1_English_Linux_64bit.tar.gz
+  #- tar xf Autodesk_EAGLE_8.7.1_English_Linux_64bit.tar.gz
+  #- $PWD/eagle-8.7.1/eagle & sleep 3; xdotool key Y
+  #- export EAGLE=$PWD/eagle-8.7.1/eagle
+  #- $EAGLE -?    # needs autocad account and login
+  # eagle >= 7 (< 8)
+  - wget ftp://ftp.cadsoft.de/eagle/program/7.7/eagle-lin64-7.7.0.run
+  - chmod +x $PWD/eagle-lin64-7.7.0.run
+  #- $PWD/eagle-lin64-7.7.0.run & sleep 10; xdotool key Return; xdotool key Return; xdotool key Return; xdotool key Return; sleep 10; xdotool keydown alt key E; xdotool keyup alt; xdotool key Return; xdotool key Return    # DOES need a display
+  #- export EAGLE=$HOME/eagle-7.7.0/bin/eagle
+  - $PWD/eagle-lin64-7.7.0.run $PWD    # does NOT need a display
+  - export EAGLE=$PWD/eagle-7.7.0/bin/eagle
+  - $EAGLE -? || true    # DOES need a display
+  - $EAGLE -d? || true    # DOES need a display
+  #- xvfb-run -a $EAGLE -? || true    # DOES need a display
+  #- xvfb-run -a $EAGLE -d? || true    # DOES need a display
+  - sudo apt-get install tree
+  - sudo apt-get install gerbv
+  - sudo apt-get install caca-utils
+
+#install:
+#  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
+#  - arduino --install-library "Adafruit SleepyDog Library,Adafruit MQTT Library"
+
+script:
+  # generate gerbers from cli - not working
+  #- sudo ${EAGLE} -N -X -dGERBER_RS274X -o${outputfile}.cmp ${BOARD_FILE}.brd Top Pads Vias
+  #- sudo ${EAGLE} -N -X -dGERBER_RS274X -o${outputfile}.sol ${BOARD_FILE}.brd Bottom Pads Vias
+  ##- ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.mil ${BOARD_FILE}.brd Milling
+  #- sudo ${EAGLE} -N -X -dGERBER_RS274X -o${outputfile}.plc ${BOARD_FILE}.brd Dimension tPlace tNames
+  #- sudo ${EAGLE} -N -X -dGERBER_RS274X -o${outputfile}.stc ${BOARD_FILE}.brd tStop
+  #- sudo ${EAGLE} -N -X -dGERBER_RS274X -o${outputfile}.sts ${BOARD_FILE}.brd bStop
+  ##- ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.crc ${BOARD_FILE}.brd tCream
+  ##- ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.dpv ${BOARD_FILE}.brd Drills
+  ##- ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.drh ${BOARD_FILE}.brd Holes
+  # choose free license "EAGLE Express"
+  # (may be put into shell script due to multiline syntax issues with travis config)
+  #- $EAGLE & \  # run eaglecad
+  #  sleep 3; xdotool getwindowfocus getwindowname; xdotool key Right; xdotool key Return; \  # select license
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool key y; \  # create eagle directory
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool key Escape; \  # skip update message
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; \  # re-focus to board
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; \  # exit
+  #  sleep 5; xwininfo -tree -root; killall eagle || true;  # clean-up
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool key Right; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key y; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Escape; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  # generate gerbers ${BOARD_FILE}.brd in $PWD directory
+  # (may be put into shell script due to multiline syntax issues with travis config)
+  #- $EAGLE & \  # run eaglecad
+  #  sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; \  # open board
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; \  # select file and open
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; \  # switch to board
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; \  # open cam processor
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; \  # open cam job
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; \  # select file and open - alternatively use $EXCELLON_CAM_FILE
+  #  sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; \  # re-focus to cam processor
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; \  # run job/process
+  #  sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; \  # exit
+  #  sleep 5; xwininfo -tree -root; killall eagle || true;  # clean-up
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  - cat ${BOARD_FILE}.gpi  # gerb274x.cam
+  # drill excellion creation
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $EXCELLON_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  - cat ${BOARD_FILE}.dri  # excellon.cam
+  # bom part list creation
+  #- $EAGLE & \  # run eaglecad
+  #  sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; \  # open board
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; \  # select file and open
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key r; \  # run ulp...
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool type $ULP_BOM_FILE; xdotool key Return; \  # select file and open
+  #  sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; \  # save...
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; \  # save
+  #  sleep 5; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; \  # re-focus to bom
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool key Escape; \  # close
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; \  # re-focus to a eagle window (all left ones have File > eXit)
+  #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; \  # exit
+  #  sleep 5; xwininfo -tree -root; killall eagle || true;  # clean-up
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key r; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $ULP_BOM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; sleep 5; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Escape; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  - cat ${BOARD_FILE}.txt  # bom.ulp
+  # drc & erc checks ...
+  # auto-router as example ...
+
+#after_script:
+after_success:
+  # prepare pushing results back to git repo
+  - git checkout -b result/travis ;
+  # add generated files to zip archive
+  - zip ${BOARD_FILE}.zip ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts  # gerb274x.cam
+  - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.drd  # excellon.cam
+  - unzip -l ${BOARD_FILE}.zip
+  # gerbv convert gerber to png for displaying (--resolution=640,480 does not work)
+  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts
+  #- img2txt --width=80 ${BOARD_FILE}.png
+  # push result back to git repo
+  - ls -la ${BOARD_FILE}.*
+  - git add ${BOARD_FILE}.zip ${BOARD_FILE}.gpi ${BOARD_FILE}.dri ${BOARD_FILE}.txt ${BOARD_FILE}.png
+  - git status
+  - git config user.email 'travis@travis-ci.org'
+  - git config user.name 'Travis CI'
+  - git commit --message "Travis build \#$TRAVIS_BUILD_NUMBER"
+  - git push -f https://$GIT_USER:$GIT_PASS@github.com/drtrigon/test-eagle-edrc.git result/travis  # dangerous; overwrite remote branch!
+  - tree
+
+#notifications:
+#  email:
+#    on_success: change
+#    on_failure: change
