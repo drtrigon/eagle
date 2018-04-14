@@ -34,7 +34,6 @@ env:
 #    - BOARD="arduino:avr:uno"
 
 before_install:
-  - env
   # setup a pseudo-display
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
@@ -102,10 +101,10 @@ script:
   #- $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;  # gerb274x.cam
   # additional keypresses; 2 times 'y' with 5s delay during/after gerber creation due to 2 Warning dialogs
   # should be compatible with default gerber (the additional keypresses are ignored then)
-  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;  # gerb274x(-mill-drill).cam
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;  # gerb274x(-mill-drill).cam
   - cat ${BOARD_FILE}.gpi  # gerb274x(-mill-drill).cam - check for error during last step
   # drill excellion creation
-  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $EXCELLON_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $EXCELLON_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - cat ${BOARD_FILE}.dri  # excellon.cam - check for error during last step
   # bom part list creation
   #- $EAGLE & \  # run eaglecad
@@ -128,22 +127,11 @@ script:
 #after_script:
 after_success:
   # add generated files to zip archive
-  - zip ${BOARD_FILE}.zip $FILE_LIST
-#  - zip ${BOARD_FILE}.zip ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts  # gerb274x.cam
-#  - |-
-#    if [[ "$GERBER_CAM_FILE" == "gerb274x-mill-drill.cam" ]] ; then
-#      zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh ;  # gerb274x-mill-drill.cam additional
-#    fi
+  - zip ${BOARD_FILE}.zip $FILE_LIST            # gerb274x(-mill-drill).cam
   - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.drd  # excellon.cam
   - unzip -l ${BOARD_FILE}.zip
   # gerbv convert gerber to png for displaying
   - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png $FILE_LIST
-#  - |-
-#    if [[ "$GERBER_CAM_FILE" == "gerb274x-mill-drill.cam" ]] ; then
-#      gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh ;
-#    else
-#      gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts ;
-#    fi
   #- img2txt --width=80 ${BOARD_FILE}.png
   # push result back to git repo
   - git checkout -b result/travis ;
