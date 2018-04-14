@@ -24,8 +24,8 @@ branches:
 env:
   global:
     - BOARD_FILE=projects/Drone_MultiWii/FlightController
-    - GERBER_CAM_FILE=gerb274x.cam
-    #- GERBER_CAM_FILE=gerb274x-mill-drill.cam
+    #- GERBER_CAM_FILE=gerb274x.cam             # default
+    - GERBER_CAM_FILE=gerb274x-mill-drill.cam  # include milling
     - EXCELLON_CAM_FILE=excellon.cam
     - ULP_BOM_FILE=bom.ulp
 #  matrix:
@@ -123,10 +123,12 @@ script:
 after_success:
   # add generated files to zip archive
   - zip ${BOARD_FILE}.zip ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts  # gerb274x.cam
+  - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh  # gerb274x-mill-drill.cam additional
   - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.drd  # excellon.cam
   - unzip -l ${BOARD_FILE}.zip
-  # gerbv convert gerber to png for displaying (--resolution=640,480 does not work)
-  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts
+  # gerbv convert gerber to png for displaying
+  #- gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts
+  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png ${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh
   #- img2txt --width=80 ${BOARD_FILE}.png
   # push result back to git repo
   - git checkout -b result/travis ;
