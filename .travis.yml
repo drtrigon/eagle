@@ -131,9 +131,9 @@ after_success:
   - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.drd  # excellon.cam
   - unzip -l ${BOARD_FILE}.zip
   # gerbv convert gerber to png for displaying
-  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png $FILE_LIST
-  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}_top.png ${BOARD_FILE}.cmp ${BOARD_FILE}.plc ${BOARD_FILE}.stc  # top layer (experimental)
-  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}_btm.png ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.sts  # bottom layer (experimental)
+  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}.png $FILE_LIST ${BOARD_FILE}.drd
+  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}_top.png ${BOARD_FILE}.cmp ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.drd  # top layer (experimental)
+  - gerbv --export=png --dpi=600,600 --output=${BOARD_FILE}_btm.png ${BOARD_FILE}.sol ${BOARD_FILE}.sts ${BOARD_FILE}.drd  # bottom layer (experimental)
   #- img2txt --width=80 ${BOARD_FILE}.png
   # push result back to git repo
   - git checkout -b result/travis ;
