@@ -19,7 +19,7 @@ language: generic
 # blocklist
 branches:
   except:
-  - result/travis
+  - result/pcb
 
 env:
   global:
@@ -136,14 +136,14 @@ after_success:
   - gerbv --export=png --dpi=600,600 --antialias --output=${BOARD_FILE}_btm.png ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.sts  # bottom layer (experimental)
   #- img2txt --width=80 ${BOARD_FILE}.png
   # push result back to git repo
-  - git checkout -b result/travis ;
+  - git checkout -b result/pcb ;
   #- git add ${BOARD_FILE}.zip ${BOARD_FILE}.gpi ${BOARD_FILE}.dri ${BOARD_FILE}.txt ${BOARD_FILE}.png
   - git add ${BOARD_FILE}.zip ${BOARD_FILE}.gpi ${BOARD_FILE}.dri ${BOARD_FILE}.txt ${BOARD_FILE}.png ${BOARD_FILE}_top.png ${BOARD_FILE}_btm.png
   - git status
   - git config user.email 'travis@travis-ci.org'
   - git config user.name 'Travis CI'
   - git commit --message "Travis build $TRAVIS_BUILD_NUMBER"
-  - git push -f https://$GIT_USER:$GIT_PASS@github.com/drtrigon/eagle.git result/travis  # dangerous; overwrite remote branch!
+  - git push -f https://$GIT_USER:$GIT_PASS@github.com/drtrigon/eagle.git result/pcb  # dangerous; overwrite remote branch!
   - tree
 
 #notifications:
