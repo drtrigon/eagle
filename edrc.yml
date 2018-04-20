@@ -1,3 +1,13 @@
 eagle:
   drc:
   - file: "projects/Drone_MultiWii/FlightController.brd"
+  - file: "projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.brd"
+  - file: "projects/arduino_ProtoShield_Rev3/Proto_shield_REV3.brd"
+  - file: "projects/DACRackUnit/addressing-auto.brd"
+  - file: "projects/DACRackUnit/addressing-manual-gnd.brd"
+  - file: "projects/DACRackUnit/addressing-nand.brd"
+  - file: "projects/DACRackUnit/high-power-supply.brd"
+  - file: "projects/DACRackUnit/power-supply.brd"
+  - file: "projects/DACRackUnit/reference-tee-15pin.brd"
+  - file: "projects/DACRackUnit/reference-tee-16pin.brd"
+  - file: "projects/DACRackUnit/references-no-gnd-loop.brd"
