@@ -48,12 +48,15 @@ origin  https://github.com/drtrigon/eagle.git (push)
 ### Enable EDRC.ME for a Repository (for Eagle)
 http://www.edrc.me/docs/
 
-### Enable Travis CI for a Repository (for Eagle) - unstable
+### Enable Travis CI for a Repository (for Eagle)
 https://github.com/drtrigon/test-eagle-edrc/blob/master/.travis.yml (does not work reliably yet)
 
 Login to Travis-CI using the GitHub account and enable Travis-CI for the given repo.
 
 Add a .travis.yml file to your project, commit, pull/push and enjoy.
+
+A word of caution; the travis run will at the end - if successfull - try to push the
+results back to this repo.
 
 ### Further Info
 EDRC.me: https://michaelblouin.ca/blog/2018/02/25/automate-design-rule-checks-autodesk-eagle/
