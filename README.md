@@ -1,25 +1,26 @@
 ## Projekte
 [![design rule check status](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/status.svg)](https://edrc.me/g/drtrigon/eagle)
-[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
-[![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
 
 https://github.com/drtrigon/sketchbook
-
-https://github.com/drtrigon/eagle/tree/result/pcb
 
 (might make sense to split projects off into separate repos/submodules)
 
 ### Drone_MultiWii / FlightController
+[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
+[![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
+
+https://github.com/drtrigon/eagle/tree/result/pcb
+
 [![projects/Drone_MultiWii/FlightController.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDrone_MultiWii%2FFlightController.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### arduino-papilio_1-WireSniffer_Rev1
-...
+[![projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino-papilio_1-WireSniffer_Rev1%2F1-Wire_Sniffer_REV1.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### arduino_ProtoShield_Rev3
-...
+[![projects/arduino_ProtoShield_Rev3/Proto_shield_REV3.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino_ProtoShield_Rev3%2FProto_shield_REV3.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### DACRackUnit
-...
+https://edrc.me/g/drtrigon/eagle ???
 
 ## Setup
 
