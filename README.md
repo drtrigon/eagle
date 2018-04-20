@@ -71,3 +71,7 @@ https://github.com/lachlanA/eagle-to-kicad, https://github.com/lachlanA/eagle-to
 xvfb & xdotool: https://unix.stackexchange.com/questions/259294/use-xvfb-to-automate-x-program
 
 ( code coverage for arduino: https://gronlier.fr/blog/2015/01/adding-code-coverage-to-your-c-project/ )
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
