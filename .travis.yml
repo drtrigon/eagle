@@ -6,6 +6,9 @@
 # http://elementalselenium.com/tips/38-headless
 # https://www.autodesk.com/products/eagle/blog/how-to-install-autodesk-eagle-on-windows-mac-and-linux/
 # http://www.instructables.com/id/Automating-Eagle-export-and-preparing-for-printing/
+# https://askubuntu.com/questions/97542/how-do-i-make-my-terminal-display-graphical-pictures
+# https://www.mikrocontroller.net/topic/370846#4188591
+# https://electronics.stackexchange.com/questions/121602/gerbv-gerber-viewer-how-to-do-png-export-of-only-area-within-board-outline
 # https://electronics.stackexchange.com/questions/269623/is-it-possible-to-run-eaglecads-drc-from-a-terminal-and-pipe-the-error-list-to
 
 # https://github.com/drtrigon/ethz-pll-eagle/blob/master/eagle-makefile.py
@@ -123,6 +126,7 @@ script:
   #  sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; \  # exit
   #  sleep 5; xwininfo -tree -root; killall eagle || true;  # clean-up
   - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key r; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $ULP_BOM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key s; xdotool keyup alt; sleep 5; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Escape; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  #- $EAGLE -C "RUN bom.ulp; QUIT;" ${BOARD_FILE}.sch  # does this work also?
   - cat ${BOARD_FILE}.txt  # bom.ulp - check for error during last step
   # board image output (use scripts interface - no xdotool)
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; EXPORT IMAGE ${BOARD_FILE}_brd.png 300; QUIT;"
