@@ -16,9 +16,6 @@ https://github.com/drtrigon/eagle/tree/result/pcb
 ### arduino-papilio_1-WireSniffer_Rev1
 [![projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino-papilio_1-WireSniffer_Rev1%2F1-Wire_Sniffer_REV1.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
-### arduino_ProtoShield_Rev3
-[![projects/arduino_ProtoShield_Rev3/Proto_shield_REV3.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino_ProtoShield_Rev3%2FProto_shield_REV3.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
-
 ### DACRackUnit
 https://edrc.me/g/drtrigon/eagle ???
 
