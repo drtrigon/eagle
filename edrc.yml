@@ -10,3 +10,4 @@ eagle:
   - file: "projects/DACRackUnit/reference-tee-15pin.brd"
   - file: "projects/DACRackUnit/reference-tee-16pin.brd"
   - file: "projects/DACRackUnit/references-no-gnd-loop.brd"
+  - file: "projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.brd"
