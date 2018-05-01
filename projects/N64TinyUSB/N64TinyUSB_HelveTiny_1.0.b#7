@@ -2042,7 +2042,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="-0.7112" y="4.3688" size="1.27" layer="25" ratio="10" display="off"/>
 <attribute name="VALUE" x="-0.635" y="-0.635" size="1.27" layer="27"/>
 </element>
-<element name="CTRL2" library="pinhead" package="1X01" value="" x="8.255" y="0" smashed="yes">
+<element name="JP3" library="pinhead" package="1X01" value="" x="8.255" y="0" smashed="yes">
 <attribute name="NAME" x="6.9088" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
 <attribute name="VALUE" x="6.985" y="-3.175" size="1.27" layer="27"/>
 </element>
@@ -2106,7 +2106,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <contactref element="R4" pad="1"/>
 <wire x1="3.175" y1="3.81" x2="6.985" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="6.985" y1="3.81" x2="8.255" y2="2.54" width="0.4064" layer="1"/>
-<contactref element="CTRL2" pad="1"/>
+<contactref element="JP3" pad="1"/>
 <wire x1="8.255" y1="0" x2="8.255" y2="2.54" width="0.4064" layer="16"/>
 </signal>
 <signal name="CTRL1">

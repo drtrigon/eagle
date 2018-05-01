@@ -2018,7 +2018,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="2.032" y="18.034" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="1.778" y="13.97" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED1" library="led" package="LED3MM" value="red" x="17.145" y="0.635" smashed="yes">
+<element name="LED1" library="led" package="LED3MM" value="" x="17.145" y="0.635" smashed="yes">
 <attribute name="NAME" x="16.256" y="-1.016" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="19.05" y="-1.016" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2040,43 +2040,43 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </element>
 <element name="RST" library="pinhead" package="1X01" value="pin" x="0.635" y="2.54" smashed="yes">
 <attribute name="NAME" x="-0.7112" y="4.3688" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="-0.635" y="-0.635" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="-0.635" y="-0.635" size="1.27" layer="27"/>
 </element>
-<element name="CTRL2" library="pinhead" package="1X01" value="pin" x="8.255" y="0" smashed="yes">
+<element name="CTRL2" library="pinhead" package="1X01" value="" x="8.255" y="0" smashed="yes">
 <attribute name="NAME" x="6.9088" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="6.985" y="-3.175" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="6.985" y="-3.175" size="1.27" layer="27"/>
 </element>
-<element name="CTRL1" library="pinhead" package="1X01" value="pin" x="10.795" y="0" smashed="yes">
+<element name="CTRL1" library="pinhead" package="1X01" value="" x="10.795" y="0" smashed="yes">
 <attribute name="NAME" x="9.4488" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="9.525" y="-3.175" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="9.525" y="-3.175" size="1.27" layer="27"/>
 </element>
-<element name="GND" library="pinhead" package="1X01" value="pin" x="13.335" y="0" smashed="yes">
+<element name="GND" library="pinhead" package="1X01" value="" x="13.335" y="0" smashed="yes">
 <attribute name="NAME" x="11.9888" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="12.065" y="-3.175" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="12.065" y="-3.175" size="1.27" layer="27"/>
 </element>
-<element name="VCC1" library="pinhead" package="1X01" value="pin" x="5.715" y="12.7" smashed="yes">
+<element name="VCC1" library="pinhead" package="1X01" value="" x="5.715" y="12.7" smashed="yes">
 <attribute name="NAME" x="4.3688" y="14.5288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="4.445" y="9.525" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="4.445" y="9.525" size="1.27" layer="27"/>
 </element>
-<element name="VCC2" library="pinhead" package="1X01" value="pin" x="3.175" y="0" smashed="yes">
+<element name="VCC2" library="pinhead" package="1X01" value="" x="3.175" y="0" smashed="yes">
 <attribute name="NAME" x="1.8288" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="1.905" y="-3.175" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="1.905" y="-3.175" size="1.27" layer="27"/>
 </element>
-<element name="LED" library="pinhead" package="1X01" value="pin" x="13.335" y="12.7" smashed="yes">
+<element name="LED" library="pinhead" package="1X01" value="" x="13.335" y="12.7" smashed="yes">
 <attribute name="NAME" x="11.9888" y="14.5288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="12.065" y="9.525" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="12.065" y="9.525" size="1.27" layer="27"/>
 </element>
-<element name="D-" library="pinhead" package="1X01" value="pin" x="10.795" y="12.7" smashed="yes">
+<element name="D-" library="pinhead" package="1X01" value="" x="10.795" y="12.7" smashed="yes">
 <attribute name="NAME" x="9.4488" y="14.5288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="9.525" y="9.525" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="9.525" y="9.525" size="1.27" layer="27"/>
 </element>
-<element name="D+" library="pinhead" package="1X01" value="pin" x="8.255" y="12.7" smashed="yes">
+<element name="D+" library="pinhead" package="1X01" value="" x="8.255" y="12.7" smashed="yes">
 <attribute name="NAME" x="6.9088" y="14.5288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="6.985" y="9.525" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="6.985" y="9.525" size="1.27" layer="27"/>
 </element>
-<element name="DUMMY" library="pinhead" package="1X01" value="pin" x="5.715" y="0" smashed="yes">
+<element name="DUMMY" library="pinhead" package="1X01" value="" x="5.715" y="0" smashed="yes">
 <attribute name="NAME" x="4.3688" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
-<attribute name="VALUE" x="4.445" y="-3.175" size="1.27" layer="27" display="off"/>
+<attribute name="VALUE" x="4.445" y="-3.175" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>

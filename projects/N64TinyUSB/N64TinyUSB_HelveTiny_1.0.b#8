@@ -132,8 +132,7 @@
 <wire x1="3.556" y1="38.608" x2="15.494" y2="38.608" width="0" layer="20"/>
 <wire x1="15.494" y1="38.608" x2="15.494" y2="25.4" width="0" layer="20"/>
 <wire x1="15.494" y1="25.4" x2="19.558" y2="25.4" width="0" layer="20"/>
-<text x="15.24" y="23.876" size="0.6096" layer="26" font="vector" rot="MR0">N64TinyUSB
-v1.0 20180430ZUS
+<text x="15.24" y="24.13" size="0.762" layer="26" rot="MR0">N64TinyUSB
 
 basic design Helvetiny85 V1.0</text>
 <polygon width="0.0254" layer="21">
@@ -1738,19 +1737,17 @@ Based on the following sources:
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="D-2.5">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="0.508" y1="0.762" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0.762" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-1.27" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0" x2="0.508" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.508" y1="-0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
-<pad name="A" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="C" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.651" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<package name="C1702-05">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 3.5 mm, vertical, grid 5.08 mm</description>
+<wire x1="2.54" y1="0" x2="0.762" y2="0" width="1.0668" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-0.889" y2="0" width="1.0668" layer="51"/>
+<circle x="-2.54" y="0" radius="1.778" width="0.1524" layer="21"/>
+<pad name="C" x="-2.54" y="0" drill="1.397" shape="octagon"/>
+<pad name="A" x="2.54" y="0" drill="1.397" shape="octagon"/>
+<text x="-4.318" y="2.032" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.318" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.7366" y1="-0.5334" x2="0.635" y2="0.5334" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2014,9 +2011,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="2.667" y="7.366" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="2.6162" y="9.906" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="rcl" package="E2,5-6E" value="4u7" x="3.175" y="16.51" smashed="yes">
-<attribute name="NAME" x="2.032" y="18.034" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="1.778" y="13.97" size="1.27" layer="27" ratio="10"/>
+<element name="C2" library="rcl" package="E2,5-6E" value="4u7" x="17.145" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.002" y="17.907" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="19.304" y="17.907" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="LED1" library="led" package="LED3MM" value="" x="17.145" y="0.635" smashed="yes">
 <attribute name="NAME" x="16.256" y="-1.016" size="0.6096" layer="25" ratio="10"/>
@@ -2026,17 +2023,17 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="17.907" y="7.366" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="17.8562" y="9.906" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="(D1)" library="diode" package="D-2.5" value="" x="17.145" y="20.32" smashed="yes">
-<attribute name="NAME" x="16.383" y="18.796" size="0.6096" layer="25" ratio="10"/>
-<attribute name="VALUE" x="15.494" y="17.907" size="1.27" layer="27" ratio="10"/>
+<element name="(D1)" library="diode" package="C1702-05" value="" x="3.175" y="22.606" smashed="yes" rot="R45">
+<attribute name="NAME" x="3.590553125" y="21.463" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.456578125" y="17.217846875" size="1.27" layer="27" ratio="10" rot="R45"/>
 </element>
-<element name="D2" library="diode" package="D-2.5" value="" x="17.145" y="17.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.653" y="16.764" size="0.6096" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="18.796" y="20.193" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="D2" library="diode" package="C1702-05" value="" x="3.175" y="18.923" smashed="yes" rot="R225">
+<attribute name="NAME" x="2.80038125" y="19.66585625" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="3.89341875" y="24.311153125" size="1.27" layer="27" ratio="10" rot="R225"/>
 </element>
-<element name="D3" library="diode" package="D-2.5" value="" x="17.145" y="15.24" smashed="yes">
-<attribute name="NAME" x="16.637" y="13.716" size="0.6096" layer="25" ratio="10"/>
-<attribute name="VALUE" x="15.494" y="12.827" size="1.27" layer="27" ratio="10"/>
+<element name="D3" library="diode" package="C1702-05" value="" x="3.175" y="15.24" smashed="yes" rot="R45">
+<attribute name="NAME" x="3.58416875" y="14.5152" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="2.456578125" y="9.851846875" size="1.27" layer="27" ratio="10" rot="R45"/>
 </element>
 <element name="RST" library="pinhead" package="1X01" value="" x="0.635" y="2.54" smashed="yes">
 <attribute name="NAME" x="-0.7112" y="4.3688" size="1.27" layer="25" ratio="10" display="off"/>
@@ -2187,8 +2184,8 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <via x="12.7" y="27.94" extent="1-16" drill="0.6"/>
 <wire x1="13.025" y1="33.855" x2="13.025" y2="28.265" width="0.4064" layer="16"/>
 <wire x1="13.025" y1="28.265" x2="12.7" y2="27.94" width="0.4064" layer="16"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="26.035" width="0.4064" layer="1"/>
-<wire x1="12.7" y1="26.035" x2="18.415" y2="20.32" width="0.4064" layer="1"/>
+<wire x1="4.97105" y1="24.40205" x2="8.509" y2="27.94" width="0.4064" layer="1"/>
+<wire x1="8.509" y1="27.94" x2="12.7" y2="27.94" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="LED1" pad="K"/>
@@ -2198,32 +2195,17 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <signal name="N$10">
 <contactref element="(D1)" pad="C"/>
 <contactref element="D2" pad="A"/>
-<wire x1="15.875" y1="20.32" x2="15.875" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="1.378946875" y1="17.126946875" x2="1.378946875" y2="20.809946875" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="D2" pad="C"/>
 <contactref element="D3" pad="A"/>
-<wire x1="18.415" y1="17.78" x2="18.415" y2="15.24" width="0.4064" layer="1"/>
+<wire x1="4.97105" y1="17.03605" x2="4.97105" y2="20.71905" width="0.4064" layer="1"/>
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,d13589a8f73a5d8d"/>
 <approved hash="18,29,d4f2c09858974cfd"/>
-<approved hash="18,29,6d58556b139dfe16"/>
-<approved hash="18,29,198812b6e79581d2"/>
-<approved hash="18,29,a39e10b7518063d3"/>
-<approved hash="18,29,e115de8bb5135bcd"/>
-<approved hash="18,29,98f074118c3060d1"/>
-<approved hash="18,29,a35e11b779ce6373"/>
-<approved hash="18,29,194813aecfd7814a"/>
-<approved hash="18,29,446a55d71375d7c4"/>
-<approved hash="18,29,c843d92bb2ff72bb"/>
-<approved hash="18,29,bc22d1a988fdd74c"/>
-<approved hash="18,29,dd89d1b2e8b33aa3"/>
-<approved hash="18,29,5536467dadf48ddf"/>
-<approved hash="18,29,097e2c51d43ef111"/>
-<approved hash="18,29,eb00f4b4d407fc9f"/>
-<approved hash="18,29,260c056ffd4cde2f"/>
+<approved hash="18,29,6311f4e3aace744e"/>
 </errors>
 </board>
 </drawing>

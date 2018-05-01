@@ -2074,7 +2074,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="6.9088" y="14.5288" size="1.27" layer="25" ratio="10" display="off"/>
 <attribute name="VALUE" x="6.985" y="9.525" size="1.27" layer="27"/>
 </element>
-<element name="DUMMY" library="pinhead" package="1X01" value="" x="5.715" y="0" smashed="yes">
+<element name="GND2" library="pinhead" package="1X01" value="" x="5.715" y="0" smashed="yes">
 <attribute name="NAME" x="4.3688" y="1.8288" size="1.27" layer="25" ratio="10" display="off"/>
 <attribute name="VALUE" x="4.445" y="-3.175" size="1.27" layer="27"/>
 </element>
