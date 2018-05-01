@@ -16757,15 +16757,15 @@ Source: www.kingbright.com</description>
 <part name="(D1)" library="diode" deviceset="DIODE-" device="D-2.5" value="1N?"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="D-2.5" value="1N?"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="D-2.5" value="1N?"/>
-<part name="RST" library="pinhead" deviceset="PINHD-1X1" device="" value="pin1"/>
-<part name="CTRL2" library="pinhead" deviceset="PINHD-1X1" device="" value="pin2"/>
-<part name="CTRL1" library="pinhead" deviceset="PINHD-1X1" device="" value="pin3"/>
-<part name="GND" library="pinhead" deviceset="PINHD-1X1" device="" value="pin4"/>
+<part name="RST" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
+<part name="CTRL2" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
+<part name="CTRL1" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
+<part name="GND" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
 <part name="VCC1" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
 <part name="VCC2" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
-<part name="LED" library="pinhead" deviceset="PINHD-1X1" device="" value="pin5"/>
-<part name="D-" library="pinhead" deviceset="PINHD-1X1" device="" value="pin6"/>
-<part name="D+" library="pinhead" deviceset="PINHD-1X1" device="" value="pin7"/>
+<part name="LED" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
+<part name="D-" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
+<part name="D+" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
 <part name="DUMMY" library="pinhead" deviceset="PINHD-1X1" device="" value="pin"/>
 </parts>
 <sheets>
@@ -16789,7 +16789,7 @@ to get small footprint</text>
 <instance part="GND3" gate="1" x="236.22" y="12.7"/>
 <instance part="GND4" gate="1" x="27.94" y="12.7"/>
 <instance part="SUPPLY1" gate="G$1" x="30.48" y="66.04"/>
-<instance part="SUPPLY2" gate="G$1" x="71.12" y="66.04"/>
+<instance part="SUPPLY2" gate="G$1" x="71.12" y="68.58"/>
 <instance part="R3" gate="G$1" x="45.72" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="44.45" y="44.2214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="44.704" y="41.91" size="1.778" layer="96" rot="R180"/>
@@ -16850,7 +16850,7 @@ to get small footprint</text>
 <attribute name="NAME" x="250.19" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="250.19" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="DUMMY" gate="G$1" x="121.92" y="58.42"/>
+<instance part="DUMMY" gate="G$1" x="119.38" y="60.96" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16943,7 +16943,7 @@ to get small footprint</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="63.5" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="63.5" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="48.26" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
 <junction x="71.12" y="50.8"/>
@@ -17080,9 +17080,6 @@ to get small footprint</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="101,1,119.38,58.42,DUMMY,1,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>

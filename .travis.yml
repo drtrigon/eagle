@@ -25,24 +25,30 @@ branches:
 
 env:
   global:
-    - BOARD_FILE=projects/Drone_MultiWii/FlightController
-    - BASIC_FILE_LIST="${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts"
     # default
-    #- GERBER_CAM_FILE=gerb274x.cam            FILE_LIST=$BASIC_FILE_LIST
+    #- GERBER_CAM_FILE=gerb274x.cam            #FILE_LIST=$BASIC_FILE_LIST
     # include milling
-    - GERBER_CAM_FILE=gerb274x-mill-drill.cam FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+    - GERBER_CAM_FILE=gerb274x-mill-drill.cam #FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
     - EXCELLON_CAM_FILE=excellon.cam
     - ULP_BOM_FILE=bom.ulp
-#  matrix:
-#    - BOARD="arduino:avr:uno"
+  matrix:
+    - BOARD_FILE=projects/Drone_MultiWii/FlightController
+    - BOARD_FILE=projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0
 
 before_install:
+  # generate needed list of files
+  - BASIC_FILE_LIST="${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts"
+  # default (GERBER_CAM_FILE=gerb274x.cam)
+  #- FILE_LIST=$BASIC_FILE_LIST
+  # include milling (GERBER_CAM_FILE=gerb274x-mill-drill.cam)
+  - FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
   # setup a pseudo-display
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
   - export DISPLAY=:1.0
   - sudo apt-get install xdotool
   - sudo apt-get install imagemagick
+  # setup eaglecad
   # eagle >= 8
   #- wget https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_8.7.1_English_Linux_64bit.tar.gz
   #- tar xf Autodesk_EAGLE_8.7.1_English_Linux_64bit.tar.gz
@@ -60,9 +66,10 @@ before_install:
   - $EAGLE -d? || true    # DOES need a display
   #- xvfb-run -a $EAGLE -? || true    # DOES need a display
   #- xvfb-run -a $EAGLE -d? || true    # DOES need a display
-  - sudo apt-get install tree
+  # install other needed packages
   - sudo apt-get install gerbv
   #- sudo apt-get install caca-utils
+  - sudo apt-get install tree
 
 #install:
 #  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
@@ -135,11 +142,13 @@ script:
   # auto-router as example
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; AUTO; EXPORT IMAGE ${BOARD_FILE}_auto.png 300; UNDO; QUIT;"
   # drc & erc checks (to images - better to logfile, see https://electronics.stackexchange.com/questions/269623/... at top)
-  - $EAGLE -C"EDIT ${BOARD_FILE}.brd; ERC;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  #- $EAGLE -C"EDIT ${BOARD_FILE}.brd; ERC;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  - $EAGLE -C"EDIT ${BOARD_FILE}.brd; EDIT ${BOARD_FILE}.sch; ERC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; DRC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_drc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
 
 #after_script:
 after_success:
+  #- tree
   # add generated files to zip archive
   - zip ${BOARD_FILE}.zip $FILE_LIST            # gerb274x(-mill-drill).cam
   - zip -u ${BOARD_FILE}.zip ${BOARD_FILE}.drd  # excellon.cam
@@ -152,6 +161,7 @@ after_success:
   #- img2txt --width=80 ${BOARD_FILE}.png
   # push result back to git repo
   - git checkout -b result/pcb ;
+#  - git pull
   #- git add ${BOARD_FILE}.zip ${BOARD_FILE}.gpi ${BOARD_FILE}.dri ${BOARD_FILE}.txt ${BOARD_FILE}.png
   - git add ${BOARD_FILE}.zip ${BOARD_FILE}.gpi ${BOARD_FILE}.dri ${BOARD_FILE}.txt ${BOARD_FILE}_brd.png ${BOARD_FILE}_sch.png ${BOARD_FILE}_auto.png ${BOARD_FILE}_erc.png ${BOARD_FILE}_drc.png ${BOARD_FILE}.png ${BOARD_FILE}_top.png ${BOARD_FILE}_btm.png
   - git add ${BOARD_FILE}_all.png  # not always generated
@@ -161,7 +171,7 @@ after_success:
   - git config user.name 'Travis CI'
   - git commit --message "Travis build $TRAVIS_BUILD_NUMBER"
   - git push -f https://$GIT_USER:$GIT_PASS@github.com/drtrigon/eagle.git result/pcb  # dangerous; overwrite remote branch!
-  - tree
+# TODO: preserve remote branch to keep data of all matrix elements
 
 #notifications:
 #  email:
