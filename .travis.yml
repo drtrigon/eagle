@@ -39,10 +39,8 @@ env:
 before_install:
   # generate needed list of files
   - BASIC_FILE_LIST="${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts"
-  # default (GERBER_CAM_FILE=gerb274x.cam)
   - FILE_LIST=$BASIC_FILE_LIST
-  # include milling (GERBER_CAM_FILE=gerb274x-mill-drill.cam)
-  #- FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+  - test GERBER_CAM_FILE=="gerb274x-mill-drill.cam" && FILE_LIST="${FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
   # setup a pseudo-display
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
@@ -116,7 +114,7 @@ script:
   - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $GERBER_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool key y; sleep 5; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;  # gerb274x(-mill-drill).cam
   - (ls ${BOARD_FILE}.drh && echo "Holes file generated.") || echo "No Holes file generated."
   - cat ${BOARD_FILE}.gpi  # gerb274x(-mill-drill).cam (drills and holes) - check for error during last step
-  - cat ${BOARD_FILE}.dri  # excellon.cam - check for error during last step
+  - test GERBER_CAM_FILE=="gerb274x-mill-drill.cam" && cat ${BOARD_FILE}.dri  # gerb274x-mill-drill.cam (drills and holes) - check for error during last step
   # drill excellion creation
   - $EAGLE & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; sleep 2; xdotool getwindowfocus getwindowname; xdotool type ${BOARD_FILE}.brd; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key w; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key m; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key o; xdotool key j; sleep 2; xdotool getwindowfocus getwindowname; xdotool type $EXCELLON_CAM_FILE; xdotool key Return; sleep 10; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key j; xdotool keyup alt; sleep 30; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - cat ${BOARD_FILE}.dri  # excellon.cam - check for error during last step
