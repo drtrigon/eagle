@@ -9,6 +9,8 @@ https://github.com/drtrigon/eagle/tree/result/pcb
 
 ### N64TinyUSB
 
+Order: make sure to select PCB Thickness 2mm and "Gold Fingers"!
+
 based on boxtec.ch Helvetiny 1.0 PCB design:
 * https://github.com/boxtec/helvetiny85
 * https://playground.boxtec.ch/doku.php/arduino/attinyusb/helvetiny85

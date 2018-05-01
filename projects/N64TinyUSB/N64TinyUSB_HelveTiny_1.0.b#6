@@ -2020,7 +2020,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </element>
 <element name="LED1" library="led" package="LED3MM" value="red" x="17.145" y="0.635" smashed="yes">
 <attribute name="NAME" x="16.256" y="-1.016" size="0.6096" layer="25" ratio="10"/>
-<attribute name="VALUE" x="19.05" y="-1.016" size="1.27" layer="27" ratio="10"/>
+<attribute name="VALUE" x="19.05" y="-1.016" size="1.27" layer="27" ratio="10" display="off"/>
 </element>
 <element name="R6" library="rcl" package="0207/7" value="1K" x="18.415" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.907" y="7.366" size="1.27" layer="25" ratio="10" rot="R270"/>
