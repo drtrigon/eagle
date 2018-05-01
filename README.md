@@ -3,13 +3,37 @@
 
 https://github.com/drtrigon/sketchbook
 
+https://github.com/drtrigon/eagle/tree/result/pcb
+
 (might make sense to split projects off into separate repos/submodules)
+
+### N64TinyUSB
+
+based on boxtec.ch Helvetiny 1.0 PCB design:
+* https://github.com/boxtec/helvetiny85
+* https://playground.boxtec.ch/doku.php/arduino/attinyusb/helvetiny85
+
+[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
+[![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
+
+[![projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FN64TinyUSB%2FN64TinyUSB_HelveTiny_1.0.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+
+#### code/firmware (design based on attiny45 n64-usb)
+
+Built using the attiny45 n64-usb AVR source files. Works out of the box but emulates 1 device only (that contains both controller).
+
+https://github.com/drtrigon/sketchbook/tree/master/cli/n64dual_tiny45
+
+#### Hint: Order PCB directly
+
+Upload the GERBER files below to https://jlcpcb.com/quote and order.
+
+* Helvetiny85: https://github.com/drtrigon/eagle/blob/master/projects/HelveTiny_1.0_GERBER.zip
+* Floweronly Arduino Shield: https://github.com/boxtec/floweronly/blob/master/floweronly_v1.0_GERBER.zip
 
 ### Drone_MultiWii / FlightController
 [![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
 [![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
-
-https://github.com/drtrigon/eagle/tree/result/pcb
 
 [![projects/Drone_MultiWii/FlightController.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDrone_MultiWii%2FFlightController.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
