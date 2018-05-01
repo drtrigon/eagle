@@ -35,6 +35,7 @@ env:
   matrix:
     - BOARD_FILE=projects/Drone_MultiWii/FlightController
     - BOARD_FILE=projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0
+    - BOARD_FILE=projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1
 
 before_install:
   # generate needed list of files

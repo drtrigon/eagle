@@ -1,5 +1,7 @@
 ## Projekte
 [![design rule check status](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/status.svg)](https://edrc.me/g/drtrigon/eagle)
+[![PCB Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
+[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
 
 https://github.com/drtrigon/sketchbook
 
@@ -8,17 +10,13 @@ https://github.com/drtrigon/eagle/tree/result/pcb
 (might make sense to split projects off into separate repos/submodules)
 
 ### N64TinyUSB
+[![projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FN64TinyUSB%2FN64TinyUSB_HelveTiny_1.0.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 Order: make sure to select PCB Thickness 2mm and "Gold Fingers"!
 
 based on boxtec.ch Helvetiny 1.0 PCB design:
 * https://github.com/boxtec/helvetiny85
 * https://playground.boxtec.ch/doku.php/arduino/attinyusb/helvetiny85
-
-[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
-[![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
-
-[![projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FN64TinyUSB%2FN64TinyUSB_HelveTiny_1.0.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 #### code/firmware (design based on attiny45 n64-usb)
 
@@ -34,16 +32,13 @@ Upload the GERBER files below to https://jlcpcb.com/quote and order.
 * Floweronly Arduino Shield: https://github.com/boxtec/floweronly/blob/master/floweronly_v1.0_GERBER.zip
 
 ### Drone_MultiWii / FlightController
-[![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
-[![GERBER Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
-
 [![projects/Drone_MultiWii/FlightController.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDrone_MultiWii%2FFlightController.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### arduino-papilio_1-WireSniffer_Rev1
 [![projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino-papilio_1-WireSniffer_Rev1%2F1-Wire_Sniffer_REV1.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### DACRackUnit
-https://edrc.me/g/drtrigon/eagle ???
+https://edrc.me/g/drtrigon/eagle ??? (travis ???)
 
 ## Setup
 
