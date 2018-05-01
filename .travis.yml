@@ -25,10 +25,11 @@ branches:
 
 env:
   global:
-    # default
-    #- GERBER_CAM_FILE=gerb274x.cam            #FILE_LIST=$BASIC_FILE_LIST
-    # include milling
-    - GERBER_CAM_FILE=gerb274x-mill-drill.cam #FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+    # default (compatible with most viewers and companies)
+    - GERBER_CAM_FILE=gerb274x.cam            #FILE_LIST=$BASIC_FILE_LIST
+    # include milling (more data - not full - but incompatible)
+    #- GERBER_CAM_FILE=gerb274x-mill-drill.cam #FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+    # how to produce gerber files if we need the bottom silkscreen also (bPlace, bNames, bDocu, ...) ?
     - EXCELLON_CAM_FILE=excellon.cam
     - ULP_BOM_FILE=bom.ulp
   matrix:
@@ -39,9 +40,9 @@ before_install:
   # generate needed list of files
   - BASIC_FILE_LIST="${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts"
   # default (GERBER_CAM_FILE=gerb274x.cam)
-  #- FILE_LIST=$BASIC_FILE_LIST
+  - FILE_LIST=$BASIC_FILE_LIST
   # include milling (GERBER_CAM_FILE=gerb274x-mill-drill.cam)
-  - FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+  #- FILE_LIST="${BASIC_FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
   # setup a pseudo-display
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
