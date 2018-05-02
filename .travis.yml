@@ -26,6 +26,10 @@ branches:
   except:
   - result/pcb
 
+#cache:
+#  directories:
+#  - $PWD/eagle-7.7.0
+
 env:
   global:
     # default (compatible with most viewers and companies)
@@ -74,7 +78,7 @@ before_install:
   #- sudo apt-get install caca-utils
   - sudo apt-get install tree
   # eagle to kicad conversion test - install most recent kicad >= v5
-  - sudo add-apt-repository ppa:js-reynaud/ppa-kicad -y; sudo apt-get update; sudo apt-get install kicad
+  - sudo add-apt-repository ppa:js-reynaud/ppa-kicad -y; travis_wait sudo apt-get update; sudo apt-get install kicad
 
 #install:
 #  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
