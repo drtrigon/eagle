@@ -13,6 +13,9 @@
 
 # https://github.com/drtrigon/ethz-pll-eagle/blob/master/eagle-makefile.py
 
+# http://kicad-pcb.org/post/eagle-import/
+# http://www.anderswallin.net/2014/10/installing-the-latest-kicad-on-ubuntu-14-04lts/
+
 #language: c
 language: generic
 #sudo: required
@@ -71,7 +74,7 @@ before_install:
   #- sudo apt-get install caca-utils
   - sudo apt-get install tree
   # eagle to kicad conversion test - install most recent kicad >= v5
-  - sudo add-apt-repository ppa:js-reynaud/ppa-kicad; sudo apt-get update; sudo apt-get install kicad
+  - sudo add-apt-repository ppa:js-reynaud/ppa-kicad -y; sudo apt-get update; sudo apt-get install kicad
 
 #install:
 #  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
