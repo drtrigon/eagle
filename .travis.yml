@@ -70,6 +70,8 @@ before_install:
   - sudo apt-get install gerbv
   #- sudo apt-get install caca-utils
   - sudo apt-get install tree
+  # eagle to kicad conversion test - install most recent kicad >= v5
+  - sudo add-apt-repository ppa:js-reynaud/ppa-kicad; sudo apt-get update; sudo apt-get install kicad
 
 #install:
 #  - ln -s $PWD /usr/local/share/arduino/libraries/Adafruit_FONA
@@ -145,6 +147,9 @@ script:
   #- $EAGLE -C"EDIT ${BOARD_FILE}.brd; ERC;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; EDIT ${BOARD_FILE}.sch; ERC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; DRC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_drc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
+  # eagle to kicad conversion test
+  - cp $PWD/projects/Drone_MultiWii/FlightController.* $HOME; kicad & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key Down; xdotool key Down; xdotool key Down; xdotool key Right; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool type FlightController; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key y; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 1 1 click 1; sleep 2; xdotool getwindowfocus getwindowname; import -window root projects/Drone_MultiWii/FlightController_kicad-test.png; sleep 5; xwininfo -tree -root; killall eagle || true; rm $HOME/FlightController.*;
+  - tree $HOME
 
 #after_script:
 after_success:
