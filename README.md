@@ -96,12 +96,7 @@ ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.sts ${board} bStop
 ```
 (mill and drill needs: gerb274x-mill-drill.cam)
 
-eagle2kicad (travis or local python script): https://hackaday.com/2015/12/27/eagle-to-kicad-made-easy/, 
-https://github.com/lachlanA/eagle-to-kicad, https://github.com/lachlanA/eagle-to-kicad-libs
-
-xvfb & xdotool: https://unix.stackexchange.com/questions/259294/use-xvfb-to-automate-x-program
-
-( code coverage for arduino: https://gronlier.fr/blog/2015/01/adding-code-coverage-to-your-c-project/ )
+eagle2kicad: KiCAD 5 supports import of eagle projects through plugin; http://kicad-pcb.org/post/eagle-import/
 
 ## License
 
