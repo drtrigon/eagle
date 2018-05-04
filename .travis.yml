@@ -64,7 +64,7 @@ before_install:
   #- export EAGLE=$PWD/eagle-8.7.1/eagle
   #- $EAGLE -?    # needs autocad account and login
   # eagle >= 7 (< 8)
-  - wget ftp://ftp.cadsoft.de/eagle/program/7.7/eagle-lin64-7.7.0.run
+  - wget --tries=45 ftp://ftp.cadsoft.de/eagle/program/7.7/eagle-lin64-7.7.0.run
   - chmod +x $PWD/eagle-lin64-7.7.0.run
   #- $PWD/eagle-lin64-7.7.0.run & sleep 10; xdotool key Return; xdotool key Return; xdotool key Return; xdotool key Return; sleep 10; xdotool keydown alt key E; xdotool keyup alt; xdotool key Return; xdotool key Return    # DOES need a display
   #- export EAGLE=$HOME/eagle-7.7.0/bin/eagle
