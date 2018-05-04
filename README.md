@@ -3,9 +3,7 @@
 [![PCB Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
 [![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
 
-https://github.com/drtrigon/sketchbook
-
-https://github.com/drtrigon/eagle/tree/result/pcb
+Results in https://github.com/drtrigon/eagle/tree/result/pcb branch are linked and shown in https://github.com/drtrigon/sketchbook repo.
 
 (might make sense to split projects off into separate repos/submodules)
 
@@ -38,7 +36,14 @@ Upload the GERBER files below to https://jlcpcb.com/quote and order.
 [![projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2Farduino-papilio_1-WireSniffer_Rev1%2F1-Wire_Sniffer_REV1.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ### DACRackUnit
-https://edrc.me/g/drtrigon/eagle ??? (travis ???)
+[![projects/DACRackUnit/reference-tee-16pin.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Freference-tee-16pin.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/power-supply.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Fpower-supply.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/addressing-auto.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Faddressing-auto.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/reference-tee-15pin.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Freference-tee-15pin.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/addressing-nand.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Faddressing-nand.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/references-no-gnd-loop.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Freferences-no-gnd-loop.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/addressing-manual-gnd.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Faddressing-manual-gnd.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
+[![projects/DACRackUnit/high-power-supply.brd from EDRC.me](https://edrc.me/api/v1/user/drtrigon/project/eagle/img/file/projects%2FDACRackUnit%2Fhigh-power-supply.png?ref=refs%2Fheads%2Fmaster)](https://edrc.me/g/drtrigon/eagle)
 
 ## Setup
 
