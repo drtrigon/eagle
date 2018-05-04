@@ -3,7 +3,7 @@
 [![PCB Build Status](https://travis-ci.org/drtrigon/eagle.svg?branch=master)](https://travis-ci.org/drtrigon/eagle)
 [![Build Status](https://travis-ci.org/drtrigon/sketchbook.svg?branch=master)](https://travis-ci.org/drtrigon/sketchbook)
 
-Results in https://github.com/drtrigon/eagle/tree/result/pcb branch are linked and shown in https://github.com/drtrigon/sketchbook repo.
+Results of eagle and kicad CI from travis are stored in https://github.com/drtrigon/eagle/tree/result/pcb branch and linked/shown in https://github.com/drtrigon/sketchbook repo. See there and in [.travis.yml](.travis.yml) for more info.
 
 (might make sense to split projects off into separate repos/submodules)
 
