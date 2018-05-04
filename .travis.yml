@@ -50,6 +50,7 @@ before_install:
   - BASIC_FILE_LIST="${BOARD_FILE}.cmp ${BOARD_FILE}.sol ${BOARD_FILE}.plc ${BOARD_FILE}.stc ${BOARD_FILE}.sts"
   - FILE_LIST=$BASIC_FILE_LIST
   - test $GERBER_CAM_FILE != "gerb274x-mill-drill.cam" || FILE_LIST="${FILE_LIST} ${BOARD_FILE}.mil ${BOARD_FILE}.crc ${BOARD_FILE}.dpv ${BOARD_FILE}.drh"
+  - BOARD_FILE_BASE=`basename "$BOARD_FILE"`
   # setup a pseudo-display
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16"
   - sleep 3
@@ -156,7 +157,7 @@ script:
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; EDIT ${BOARD_FILE}.sch; ERC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_erc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   - $EAGLE -C"EDIT ${BOARD_FILE}.brd; DRC; ERRORS;" & sleep 10; import -window root ${BOARD_FILE}_drc.png; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key x; sleep 5; xwininfo -tree -root; killall eagle || true;
   # eagle to kicad conversion test (no return/error code handling implemented yet) - tested/working with KiCAD 5.0RC2
-  - test $BOARD_FILE != "projects/Drone_MultiWii/FlightController" || (cp $PWD/${BOARD_FILE}.* $HOME; kicad & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key Down; xdotool key Down; xdotool key Down; xdotool key Right; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 420 330 click 1; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key y; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key n; xdotool keyup alt; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 3; xdotool getwindowfocus getwindowname; xdotool mousemove 10 10 click 1; xdotool key Up; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 5; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key e; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 5; xwininfo -tree -root; killall kicad || true; rm $HOME/FlightController.*; zip -r $PWD/${BOARD_FILE}_kicad.zip $HOME/FlightController/; rm -rf $HOME/FlightController;);
+  - test $BOARD_FILE != "projects/Drone_MultiWii/FlightController" || (cp $PWD/${BOARD_FILE}.* $HOME; kicad & sleep 3; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key Down; xdotool key Down; xdotool key Down; xdotool key Right; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool mousemove 420 330 click 1; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key y; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 10; xdotool getwindowfocus getwindowname; xdotool keydown alt key n; xdotool keyup alt; sleep 2; xdotool getwindowfocus getwindowname; xdotool keydown alt key o; xdotool keyup alt; sleep 3; xdotool getwindowfocus getwindowname; xdotool mousemove 10 10 click 1; xdotool key Up; xdotool key Return; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 5; xdotool getwindowfocus getwindowname; xdotool keydown alt key f; xdotool keyup alt; xdotool key e; sleep 2; xdotool getwindowfocus getwindowname; xdotool key Return; sleep 5; xwininfo -tree -root; killall kicad || true; rm $HOME/${BOARD_FILE_BASE}.*; zip -r $PWD/${BOARD_FILE}_kicad.zip $HOME/$BOARD_FILE_BASE/; rm -rf $HOME/$BOARD_FILE_BASE;);
 
 #after_script:
 after_success:
@@ -179,10 +180,8 @@ after_success:
   - test $BOARD_FILE != "projects/Drone_MultiWii/FlightController" || git add $PWD/${BOARD_FILE}_kicad.zip  # eagle to kicad conversion test
   #- git add screenshot_*.png  # debug screenshoots
   - git stash
-  - git status
-  - git pull https://$GIT_USER:$GIT_PASS@github.com/drtrigon/eagle.git result/pcb || true  # pull upstream branch to preserve history - dangerous; fast-forward not always working, may overwrite results with old data - stash a solution?
-  #- git stash pop
-  - git checkout stash -- .
+  - git pull https://$GIT_USER:$GIT_PASS@github.com/drtrigon/eagle.git result/pcb || true  # pull upstream branch to preserve history
+  - git checkout stash -- .  # stash to preserve local changes
   - git status
   - git config user.email 'travis@travis-ci.org'
   - git config user.name 'Travis CI'
