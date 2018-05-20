@@ -1,4 +1,4 @@
-Partlist exported from /home/travis/build/drtrigon/eagle/projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.sch at 5/19/18 11:15 AM
+Partlist exported from /home/travis/build/drtrigon/eagle/projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.sch at 5/20/18 2:38 PM
 
 Part   Value      Device       Package      Description                                           MF               MPN        OC_FARNELL OC_NEWARK
 1      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
