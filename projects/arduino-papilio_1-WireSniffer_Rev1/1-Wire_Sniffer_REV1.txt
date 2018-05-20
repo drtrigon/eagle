@@ -1,0 +1,34 @@
+Partlist exported from /home/travis/build/drtrigon/eagle/projects/arduino-papilio_1-WireSniffer_Rev1/1-Wire_Sniffer_REV1.sch at 5/19/18 11:15 AM
+
+Part   Value      Device       Package      Description                                           MF               MPN        OC_FARNELL OC_NEWARK
+1      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+2      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+3      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+4      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+5      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+6      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+7      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+8      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+9      LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+10     LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+11     LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+12     LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+13     LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+14     LSP10      LSP10        LSP10        SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                 
+ANALOG            PINHD-1X6    1X06         PIN HEADER                                                                                            
+IC2    SMD-14     SMD-14       SO-14NMW                                                                                                           
+ICSP              PINHD-2X3    2X03         PIN HEADER                                                                                            
+J1                PINHD-1X8TH  1X08-TH      PIN HEADER                                                                                            
+J2                PINHD-1X8TH  1X08-TH      PIN HEADER                                                                                            
+J3                PINHD-1X10TH 1X10-TH      PIN HEADER                                                                                            
+J4                PINHD-1X10TH 1X10-TH      PIN HEADER                                                                                            
+J5                PINHD-1X8TH  1X08-TH      PIN HEADER                                                                                            
+J6                PINHD-1X6    1X06         PIN HEADER                                                                                            
+POWER             PINHD-1X8TH  1X08-TH      PIN HEADER                                                                                            
+R1                R-EU_0207/10 0207/10      RESISTOR, European symbol                                                                             
+RESET             10-XX        B3F-10XX     OMRON SWITCH                                                                                          
+SV1               MA10-2       MA10-2       PIN HEADER                                                                        unknown    unknown  
+SV2               MA08-1       MA08-1       PIN HEADER                                                                        unknown    unknown  
+U$1    DISCLAIMER DISCLAIMER   DISCLAIMER                                                                                                         
+X1     RJ45-8L2-B RJ45-8L2-B   RJ45-SHIELD2 RJ45 Low Profile Shield Type 2                        TYCO ELECTRONICS RJ45-8L2-B unknown    52K3810  
+X3                W237-102     W237-102     WAGO SCREW CLAMP                                                       237-102    unknown    70K9898  

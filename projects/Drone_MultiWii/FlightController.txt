@@ -1,0 +1,12 @@
+Partlist exported from /home/travis/build/drtrigon/eagle/projects/Drone_MultiWii/FlightController.sch at 5/19/18 11:35 AM
+
+Part Value Device Package Description  MF MPN OC_FARNELL OC_NEWARK
+JP1  M02   M02PTH 1X02    Header 2                                
+JP2  M14   M14    1X14    Header 14                               
+JP3  M14   M14    1X14    Header 14                               
+JP4  M09   M09    1X09    Header 9                                
+SV1  CON1  MA07-1 MA07-1  PIN HEADER          unknown    unknown  
+SV2  CON2  MA09-1 MA09-1  PIN HEADER          unknown    unknown  
+SV3  CON3  MA05-1 MA05-1  PIN HEADER          unknown    unknown  
+SV5  CON5  M12PTH 1X12    Header 12                               
+U$1  NANO  NANO   NANO    Arduino Nano                            
