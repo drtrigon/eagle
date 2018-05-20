@@ -132,11 +132,8 @@
 <wire x1="3.556" y1="36.068" x2="15.494" y2="36.068" width="0" layer="20"/>
 <wire x1="15.494" y1="36.068" x2="15.494" y2="22.86" width="0" layer="20"/>
 <wire x1="15.494" y1="22.86" x2="19.558" y2="22.86" width="0" layer="20"/>
-<text x="0" y="19.685" size="0.4064" layer="25" font="vector">N64TinyUSB
-v1.0 20180430ZUS
-
-basic design
-Helvetiny85 V1.0</text>
+<text x="0" y="22.225" size="0.6096" layer="25" font="vector" align="top-left">N64TinyUSB
+v1.1 20180520ZUS</text>
 <text x="5.715" y="8.001" size="0.8128" layer="25" rot="R180" align="top-center">VCC</text>
 <text x="5.715" y="4.699" size="0.8128" layer="25" rot="SR0" align="top-center">RST</text>
 <text x="8.255" y="4.699" size="0.8128" layer="25" rot="SR0" align="top-center">CT2</text>
@@ -156,6 +153,8 @@ Helvetiny85 V1.0</text>
 <dimension x1="19.558" y1="22.86" x2="19.558" y2="-1.27" x3="24.13" y3="10.795" textsize="1.778" layer="51"/>
 <dimension x1="15.494" y1="36.068" x2="15.494" y2="22.86" x3="24.13" y3="29.464" textsize="1.778" layer="51"/>
 <dimension x1="3.556" y1="36.068" x2="15.494" y2="36.068" x3="9.525" y3="40.64" textsize="1.778" layer="51"/>
+<text x="0" y="18.415" size="0.6096" layer="25" font="vector">based on
+Helvetiny85 V1</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -1651,9 +1650,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="2.667" y="7.366" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="2.6162" y="9.906" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C2" library="rcl" package="E2,5-6E" value="4u7" x="3.175" y="16.51" smashed="yes">
-<attribute name="NAME" x="2.032" y="18.034" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="1.778" y="13.97" size="1.27" layer="27" ratio="10"/>
+<element name="C2" library="rcl" package="E2,5-6E" value="4u7" x="2.54" y="15.24" smashed="yes">
+<attribute name="NAME" x="1.397" y="16.764" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="1.143" y="12.7" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="LED1" library="led" package="LED3MM" value="red" x="17.145" y="0.635" smashed="yes">
 <attribute name="NAME" x="16.256" y="-1.016" size="0.6096" layer="25" ratio="10"/>
@@ -1663,15 +1662,15 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <attribute name="NAME" x="17.907" y="7.366" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="17.8562" y="9.906" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="(D1)" library="diode" package="D-2.5" value="1N?" x="17.145" y="20.32" smashed="yes">
+<element name="(D1)" library="diode" package="D-2.5" value="1N4150" x="17.145" y="20.32" smashed="yes">
 <attribute name="NAME" x="16.383" y="18.796" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="15.494" y="17.907" size="1.27" layer="27" ratio="10" display="off"/>
 </element>
-<element name="D2" library="diode" package="D-2.5" value="1N?" x="17.145" y="17.78" smashed="yes" rot="R180">
+<element name="D2" library="diode" package="D-2.5" value="1N4150" x="17.145" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.653" y="16.764" size="0.6096" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="18.796" y="20.193" size="1.27" layer="27" ratio="10" rot="R180" display="off"/>
 </element>
-<element name="D3" library="diode" package="D-2.5" value="1N?" x="17.145" y="15.24" smashed="yes">
+<element name="D3" library="diode" package="D-2.5" value="1N4150" x="17.145" y="15.24" smashed="yes">
 <attribute name="NAME" x="16.637" y="13.716" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="15.494" y="12.827" size="1.27" layer="27" ratio="10" display="off"/>
 </element>
@@ -1725,7 +1724,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <contactref element="R4" pad="2"/>
 <contactref element="C2" pad="+"/>
 <contactref element="D3" pad="C"/>
-<polygon width="0.254" layer="1">
+<polygon width="0.127" layer="1">
 <vertex x="3.81" y="26.67"/>
 <vertex x="15.24" y="26.67"/>
 <vertex x="15.24" y="22.86"/>
@@ -1772,7 +1771,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <contactref element="U1" pad="4"/>
 <contactref element="JP1" pad="GND"/>
 <contactref element="C1" pad="2"/>
-<polygon width="0.254" layer="16">
+<polygon width="0.127" layer="16">
 <vertex x="3.81" y="26.67"/>
 <vertex x="15.24" y="26.67"/>
 <vertex x="15.24" y="22.86"/>
@@ -1848,23 +1847,23 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,d13589a8f73a5d8d"/>
+<approved hash="18,29,9134d31256afe6c2"/>
 <approved hash="18,29,d4f2c09858974cfd"/>
-<approved hash="18,29,98f074118c3060d1"/>
-<approved hash="18,29,6d58556b139dfe16"/>
-<approved hash="18,29,e115de8bb5135bcd"/>
-<approved hash="18,29,198812b6e79581d2"/>
-<approved hash="18,29,a39e10b7518063d3"/>
 <approved hash="18,29,c843d92bb2ff72bb"/>
-<approved hash="18,29,a35e11b779ce6373"/>
-<approved hash="18,29,194813aecfd7814a"/>
 <approved hash="18,29,446a55d71375d7c4"/>
-<approved hash="18,29,bc22d1a988fdd74c"/>
+<approved hash="18,29,194813aecfd7814a"/>
+<approved hash="18,29,a35e11b779ce6373"/>
+<approved hash="18,29,a39e10b7518063d3"/>
+<approved hash="18,29,6d58556b139dfe16"/>
+<approved hash="18,29,198812b6e79581d2"/>
+<approved hash="18,29,e115de8bb5135bcd"/>
+<approved hash="18,29,98f074118c3060d1"/>
 <approved hash="18,29,dd89d1b2e8b33aa3"/>
+<approved hash="18,29,bc22d1a988fdd74c"/>
 <approved hash="18,29,eb00f4b4d407fc9f"/>
 <approved hash="18,29,260c056ffd4cde2f"/>
-<approved hash="18,29,5536467dadf48ddf"/>
 <approved hash="18,29,097e2c51d43ef111"/>
+<approved hash="18,29,5536467dadf48ddf"/>
 </errors>
 </board>
 </drawing>
