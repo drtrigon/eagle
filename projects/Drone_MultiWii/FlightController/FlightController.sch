@@ -1,0 +1,415 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7000 3300 5900 3300
+Wire Wire Line
+	5900 3300 5900 5000
+Wire Wire Line
+	5900 5000 2300 5000
+Wire Wire Line
+	2300 5000 2300 3400
+Wire Wire Line
+	2300 3400 2700 3400
+Wire Wire Line
+	7000 5000 5900 5000
+Wire Wire Line
+	2300 3400 2000 3400
+Connection ~ 5900 5000
+Connection ~ 2300 3400
+Wire Wire Line
+	7000 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 5100
+Wire Wire Line
+	6000 5100 2200 5100
+Wire Wire Line
+	2200 5100 2200 3500
+Wire Wire Line
+	2200 3500 2700 3500
+Wire Wire Line
+	7000 5100 6000 5100
+Wire Wire Line
+	2000 3500 2200 3500
+Connection ~ 6000 5100
+Connection ~ 2200 3500
+Wire Wire Line
+	7000 3600 6300 3600
+Wire Wire Line
+	6300 3600 6300 5200
+Wire Wire Line
+	6300 5200 6300 5300
+Wire Wire Line
+	6300 5300 2600 5300
+Wire Wire Line
+	2600 5300 2600 4000
+Wire Wire Line
+	2600 4000 2700 4000
+Wire Wire Line
+	7000 5200 6300 5200
+Wire Wire Line
+	2600 5500 2600 5300
+Connection ~ 6300 5200
+Connection ~ 2600 5300
+Text Label 7000 3600 0    10   ~ 0
+GND
+Wire Wire Line
+	9100 3100 9000 3100
+Wire Wire Line
+	9000 3200 9100 3200
+Wire Wire Line
+	9100 3200 9100 3100
+Wire Wire Line
+	9000 3300 9100 3300
+Wire Wire Line
+	9100 3300 9100 3200
+Wire Wire Line
+	9000 3400 9100 3400
+Wire Wire Line
+	9100 3400 9100 3300
+Wire Wire Line
+	9000 3500 9100 3500
+Wire Wire Line
+	9100 3500 9100 3400
+Wire Wire Line
+	9000 3600 9100 3600
+Wire Wire Line
+	9100 3600 9100 3500
+Wire Wire Line
+	9000 3700 9100 3700
+Wire Wire Line
+	9100 3700 9100 3600
+Wire Wire Line
+	9000 3800 9100 3800
+Wire Wire Line
+	9100 3800 9100 3700
+Wire Wire Line
+	9000 3900 9100 3900
+Wire Wire Line
+	9100 3900 9100 3800
+Wire Wire Line
+	9000 4000 9100 4000
+Wire Wire Line
+	9100 4000 9100 3900
+Wire Wire Line
+	9000 4100 9100 4100
+Wire Wire Line
+	9100 4100 9100 4000
+Wire Wire Line
+	9000 4200 9100 4200
+Wire Wire Line
+	9100 4200 9100 4100
+Wire Wire Line
+	9000 4300 9100 4300
+Wire Wire Line
+	9100 4300 9100 4200
+Wire Wire Line
+	9000 4400 9100 4400
+Wire Wire Line
+	9100 4400 9100 4300
+Wire Wire Line
+	9100 4400 9100 4700
+Connection ~ 9100 4300
+Connection ~ 9100 4200
+Connection ~ 9100 4100
+Connection ~ 9100 4000
+Connection ~ 9100 3900
+Connection ~ 9100 3800
+Connection ~ 9100 3700
+Connection ~ 9100 3600
+Connection ~ 9100 3500
+Connection ~ 9100 3400
+Connection ~ 9100 3300
+Connection ~ 9100 3200
+Connection ~ 9100 4400
+Text Label 9100 3100 0    10   ~ 0
+GND
+Wire Wire Line
+	7000 3800 6400 3800
+Wire Wire Line
+	6400 3800 6400 5400
+Wire Wire Line
+	6400 5400 2500 5400
+Wire Wire Line
+	2500 5400 2500 3800
+Wire Wire Line
+	2500 3800 2700 3800
+Wire Wire Line
+	7000 5400 6400 5400
+Wire Wire Line
+	2500 3800 2500 2500
+Connection ~ 6400 5400
+Connection ~ 2500 3800
+Text Label 7000 3800 0    10   ~ 0
++5V
+Wire Wire Line
+	9800 4400 9900 4400
+Wire Wire Line
+	9800 4300 9900 4300
+Wire Wire Line
+	9900 4300 9900 4400
+Wire Wire Line
+	9800 4200 9900 4200
+Wire Wire Line
+	9900 4200 9900 4300
+Wire Wire Line
+	9800 4100 9900 4100
+Wire Wire Line
+	9900 4100 9900 4200
+Wire Wire Line
+	9800 4000 9900 4000
+Wire Wire Line
+	9900 4000 9900 4100
+Wire Wire Line
+	9800 3900 9900 3900
+Wire Wire Line
+	9900 3900 9900 4000
+Wire Wire Line
+	9800 3800 9900 3800
+Wire Wire Line
+	9900 3800 9900 3900
+Wire Wire Line
+	9800 3700 9900 3700
+Wire Wire Line
+	9900 3700 9900 3800
+Wire Wire Line
+	9800 3600 9900 3600
+Wire Wire Line
+	9900 3600 9900 3700
+Wire Wire Line
+	9800 3500 9900 3500
+Wire Wire Line
+	9900 3500 9900 3600
+Wire Wire Line
+	9800 3400 9900 3400
+Wire Wire Line
+	9900 3400 9900 3500
+Wire Wire Line
+	9800 3300 9900 3300
+Wire Wire Line
+	9900 3300 9900 3400
+Wire Wire Line
+	9800 3200 9900 3200
+Wire Wire Line
+	9900 3200 9900 3300
+Wire Wire Line
+	9800 3100 9900 3100
+Wire Wire Line
+	9900 3100 9900 3200
+Wire Wire Line
+	9900 3100 9900 2800
+Connection ~ 9900 3200
+Connection ~ 9900 3300
+Connection ~ 9900 3400
+Connection ~ 9900 3500
+Connection ~ 9900 3600
+Connection ~ 9900 3700
+Connection ~ 9900 3800
+Connection ~ 9900 3900
+Connection ~ 9900 4000
+Connection ~ 9900 4100
+Connection ~ 9900 4200
+Connection ~ 9900 4300
+Connection ~ 9900 3100
+Text Label 9800 4400 0    10   ~ 0
++5V
+Wire Wire Line
+	4000 3700 4200 3700
+Wire Wire Line
+	4200 3600 4000 3600
+Wire Wire Line
+	4000 3500 4200 3500
+Wire Wire Line
+	4200 3400 4000 3400
+Wire Wire Line
+	4000 3300 4200 3300
+Wire Wire Line
+	4200 3200 4000 3200
+Wire Wire Line
+	4000 3100 4200 3100
+Wire Wire Line
+	4200 3000 4000 3000
+Wire Wire Line
+	4000 2900 4200 2900
+Wire Wire Line
+	4200 2800 4000 2800
+Wire Wire Line
+	4000 2700 4200 2700
+Wire Wire Line
+	4000 4000 4200 4000
+Wire Wire Line
+	4200 4100 4000 4100
+Wire Wire Line
+	2000 3700 2700 3700
+Wire Wire Line
+	2700 3600 2000 3600
+Wire Wire Line
+	2000 3300 2700 3300
+Wire Wire Line
+	2700 3200 2000 3200
+Wire Wire Line
+	2000 3100 2700 3100
+Wire Wire Line
+	2700 3000 2000 3000
+Wire Wire Line
+	2000 2900 2200 2900
+Wire Wire Line
+	2200 2900 2200 2800
+Wire Wire Line
+	2200 2800 2700 2800
+$Comp
+L FlightController-eagle-import:NANO U$1
+U 1 0 850A8AB0BABD3B23
+P 3600 3300
+F 0 "U$1" H 3600 3300 50  0001 C CNN
+F 1 "NANO" H 3600 3300 50  0001 C CNN
+F 2 "FlightController:NANO" H 3600 3300 50  0001 C CNN
+F 3 "" H 3600 3300 50  0001 C CNN
+	1    3600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:MA07-1 SV1
+U 1 0 1A6ACA7C2260311A
+P 7300 3500
+F 0 "SV1" H 7250 3930 59  0000 L BNN
+F 1 "CON1" H 7250 3000 59  0000 L BNN
+F 2 "FlightController:MA07-1" H 7300 3500 50  0001 C CNN
+F 3 "" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L FlightController-eagle-import:MA09-1 SV2
+U 1 0 FAFBB517BEB1F80B
+P 7300 5000
+F 0 "SV2" H 7250 5530 59  0000 L BNN
+F 1 "CON2" H 7250 4400 59  0000 L BNN
+F 2 "FlightController:MA09-1" H 7300 5000 50  0001 C CNN
+F 3 "" H 7300 5000 50  0001 C CNN
+	1    7300 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L FlightController-eagle-import:MA05-1 SV3
+U 1 0 158452D28EE11065
+P 8000 5000
+F 0 "SV3" H 7950 5330 59  0000 L BNN
+F 1 "CON3" H 7950 4600 59  0000 L BNN
+F 2 "FlightController:MA05-1" H 8000 5000 50  0001 C CNN
+F 3 "" H 8000 5000 50  0001 C CNN
+	1    8000 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L FlightController-eagle-import:GND #GND01
+U 1 0 6F68935FDB8695AC
+P 2600 5600
+F 0 "#GND01" H 2600 5600 50  0001 C CNN
+F 1 "GND" H 2500 5500 59  0000 L BNN
+F 2 "" H 2600 5600 50  0001 C CNN
+F 3 "" H 2600 5600 50  0001 C CNN
+	1    2600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:+5V #P+01
+U 1 0 93600057BCDF72C5
+P 2500 2400
+F 0 "#P+01" H 2500 2400 50  0001 C CNN
+F 1 "+5V" V 2400 2200 59  0000 L BNN
+F 2 "" H 2500 2400 50  0001 C CNN
+F 3 "" H 2500 2400 50  0001 C CNN
+	1    2500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:M12PTH SV5
+U 1 0 F597002CC013C292
+P 4600 3200
+F 0 "SV5" H 4600 3830 59  0000 L BNN
+F 1 "CON5" H 4600 2400 59  0000 L BNN
+F 2 "FlightController:1X12" H 4600 3200 50  0001 C CNN
+F 3 "" H 4600 3200 50  0001 C CNN
+	1    4600 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L FlightController-eagle-import:M02PTH JP1
+U 1 0 8D53A6DF1CFF0F78
+P 4500 4100
+F 0 "JP1" H 4400 4330 59  0000 L BNN
+F 1 "M02" H 4400 3900 59  0000 L BNN
+F 2 "FlightController:1X02" H 4500 4100 50  0001 C CNN
+F 3 "" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:M14 JP2
+U 1 0 4804D7FCFA93C76E
+P 9400 3700
+F 0 "JP2" H 9400 4430 59  0000 L BNN
+F 1 "M14" H 9400 2800 59  0000 L BNN
+F 2 "FlightController:1X14" H 9400 3700 50  0001 C CNN
+F 3 "" H 9400 3700 50  0001 C CNN
+	1    9400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:M14 JP3
+U 1 0 CD71B194ACD8E5B6
+P 8600 3700
+F 0 "JP3" H 8600 4430 59  0000 L BNN
+F 1 "M14" H 8600 2800 59  0000 L BNN
+F 2 "FlightController:1X14" H 8600 3700 50  0001 C CNN
+F 3 "" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:+5V #P+02
+U 1 0 CA948EF4339DE9D3
+P 9900 2700
+F 0 "#P+02" H 9900 2700 50  0001 C CNN
+F 1 "+5V" V 9800 2500 59  0000 L BNN
+F 2 "" H 9900 2700 50  0001 C CNN
+F 3 "" H 9900 2700 50  0001 C CNN
+	1    9900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:GND #GND02
+U 1 0 350FEA2913A376EC
+P 9100 4800
+F 0 "#GND02" H 9100 4800 50  0001 C CNN
+F 1 "GND" H 9000 4700 59  0000 L BNN
+F 2 "" H 9100 4800 50  0001 C CNN
+F 3 "" H 9100 4800 50  0001 C CNN
+	1    9100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L FlightController-eagle-import:M09 JP4
+U 1 0 28A9B5EA47274FB3
+P 1600 3300
+F 0 "JP4" H 1600 3950 59  0000 L BNN
+F 1 "M09" H 1600 2700 59  0000 L BNN
+F 2 "FlightController:1X09" H 1600 3300 50  0001 C CNN
+F 3 "" H 1600 3300 50  0001 C CNN
+	1    1600 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

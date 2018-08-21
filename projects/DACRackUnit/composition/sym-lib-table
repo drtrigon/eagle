@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name composition-eagle-import)(type Legacy)(uri ${KIPRJMOD}/composition-eagle-import.lib)(options "")(descr ""))
+)

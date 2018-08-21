@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name reference-tee-16pin-eagle-import)(type Legacy)(uri ${KIPRJMOD}/reference-tee-16pin-eagle-import.lib)(options "")(descr ""))
+)

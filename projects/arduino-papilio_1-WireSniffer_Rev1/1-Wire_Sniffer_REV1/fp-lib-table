@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 1-Wire_Sniffer_REV1)(type KiCad)(uri "$(KIPRJMOD)/1-Wire_Sniffer_REV1.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name 1-Wire_Sniffer_REV1-eagle-import)(type Legacy)(uri ${KIPRJMOD}/1-Wire_Sniffer_REV1-eagle-import.lib)(options "")(descr ""))
+)

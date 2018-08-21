@@ -1,0 +1,926 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr User 16774 11503
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3600 1200 3600 2400
+Wire Wire Line
+	2500 1000 2500 1200
+Wire Wire Line
+	2500 1200 3600 1200
+Wire Wire Line
+	3600 2400 3600 3500
+Wire Wire Line
+	3600 3500 3600 4600
+Wire Wire Line
+	3600 4600 4300 4600
+Wire Wire Line
+	2500 1200 1700 1200
+Wire Wire Line
+	3600 2400 4000 2400
+Wire Wire Line
+	3600 3500 4000 3500
+Connection ~ 2500 1200
+Connection ~ 3600 2400
+Connection ~ 3600 3500
+Text Label 1700 1200 0    70   ~ 0
++15V
+Wire Wire Line
+	8100 1000 8100 1200
+Wire Wire Line
+	8100 1200 9500 1200
+Text Label 8100 1000 0    10   ~ 0
++15V
+Wire Wire Line
+	1500 2400 1800 2400
+Wire Wire Line
+	1800 2400 2200 2400
+Wire Wire Line
+	2200 2400 2500 2400
+Wire Wire Line
+	2500 2200 2500 2400
+Wire Wire Line
+	1500 2400 1500 2500
+Wire Wire Line
+	1800 2500 1800 2400
+Wire Wire Line
+	2200 2400 2200 2500
+Wire Wire Line
+	2500 2500 2500 2400
+Wire Wire Line
+	2900 2500 2900 2400
+Wire Wire Line
+	2900 2400 2500 2400
+Connection ~ 1800 2400
+Connection ~ 2200 2400
+Connection ~ 2500 2400
+Text Label 1500 2400 0    10   ~ 0
++15V
+Wire Wire Line
+	8100 1600 8100 1400
+Wire Wire Line
+	8100 1400 9500 1400
+Text Label 8100 1600 0    10   ~ 0
+-15V
+Wire Wire Line
+	2500 1600 2500 1400
+Wire Wire Line
+	2500 1400 1700 1400
+Text Label 1700 1400 0    70   ~ 0
+-15V
+Wire Wire Line
+	1500 3400 1800 3400
+Wire Wire Line
+	1800 3400 2500 3400
+Wire Wire Line
+	2500 3400 2500 3600
+Wire Wire Line
+	1500 3300 1500 3400
+Wire Wire Line
+	1800 3300 1800 3400
+Connection ~ 1800 3400
+Text Label 1500 3400 0    10   ~ 0
+-15V
+Wire Wire Line
+	7900 1300 8500 1300
+Wire Wire Line
+	7900 2500 8500 2500
+Wire Wire Line
+	7900 2500 7900 1300
+Wire Wire Line
+	7900 5100 7900 4700
+Wire Wire Line
+	7900 4700 7900 2500
+Wire Wire Line
+	8500 1300 8500 1600
+Wire Wire Line
+	8500 2500 8500 2700
+Wire Wire Line
+	8500 2500 9500 2500
+Wire Wire Line
+	8500 1300 9500 1300
+Wire Wire Line
+	7900 4700 9500 4700
+Wire Wire Line
+	9500 4700 9500 4800
+Wire Wire Line
+	9500 4800 9500 4900
+Wire Wire Line
+	9500 4900 9500 5000
+Wire Wire Line
+	9500 5000 9500 5100
+Connection ~ 8500 1300
+Connection ~ 8500 2500
+Connection ~ 7900 2500
+Connection ~ 7900 4700
+Connection ~ 9500 4800
+Connection ~ 9500 4900
+Connection ~ 9500 5000
+Text Label 7900 1300 0    10   ~ 0
+GND
+Wire Wire Line
+	2700 1600 2700 1300
+Wire Wire Line
+	2700 1300 1700 1300
+Text Label 1700 1300 0    70   ~ 0
+GND
+Wire Wire Line
+	3800 4000 4100 4000
+Text Label 3800 4000 0    10   ~ 0
+GND
+Wire Wire Line
+	3800 2900 4100 2900
+Text Label 3800 2900 0    10   ~ 0
+GND
+Wire Wire Line
+	6300 2900 6700 2900
+Wire Wire Line
+	6700 2900 7000 2900
+Wire Wire Line
+	7000 2800 7000 2900
+Wire Wire Line
+	6700 2900 6700 2800
+Wire Wire Line
+	6300 2800 6300 2900
+Wire Wire Line
+	6300 2900 6000 2900
+Wire Wire Line
+	6000 2900 6000 2800
+Connection ~ 6700 2900
+Connection ~ 6300 2900
+Connection ~ 6000 2900
+Text Label 6300 2900 0    10   ~ 0
+GND
+Wire Wire Line
+	6000 4000 6300 4000
+Wire Wire Line
+	6300 3900 6300 4000
+Wire Wire Line
+	6000 4000 6000 3900
+Wire Wire Line
+	6300 4000 6700 4000
+Wire Wire Line
+	6700 3900 6700 4000
+Wire Wire Line
+	6700 4000 7000 4000
+Wire Wire Line
+	7000 4000 7000 3900
+Connection ~ 6000 4000
+Connection ~ 6700 4000
+Connection ~ 6300 4000
+Text Label 6000 4000 0    10   ~ 0
+GND
+Wire Wire Line
+	1500 2800 1500 2900
+Wire Wire Line
+	1500 3000 1500 2900
+Wire Wire Line
+	1500 2900 1800 2900
+Wire Wire Line
+	1800 2900 1800 2800
+Wire Wire Line
+	1800 2900 1800 3000
+Wire Wire Line
+	1800 2900 2200 2900
+Wire Wire Line
+	2200 2900 2500 2900
+Wire Wire Line
+	2500 2900 2900 2900
+Wire Wire Line
+	2500 2900 2500 2800
+Wire Wire Line
+	2200 2800 2200 2900
+Wire Wire Line
+	2900 2800 2900 2900
+Connection ~ 2500 2900
+Connection ~ 2200 2900
+Connection ~ 1800 2900
+Connection ~ 1500 2900
+Connection ~ 2900 2900
+Text Label 1500 2800 0    10   ~ 0
+GND
+Wire Wire Line
+	3800 6300 4300 6300
+Wire Wire Line
+	4300 6300 4300 6200
+Text Label 3800 6300 0    10   ~ 0
+GND
+Wire Wire Line
+	6000 5000 6000 5100
+Text Label 6000 5000 0    10   ~ 0
+GND
+Wire Wire Line
+	8100 3300 8100 3500
+Wire Wire Line
+	8100 3500 9500 3500
+Wire Wire Line
+	9500 2600 9500 3500
+Text Label 8100 3300 0    10   ~ 0
++3V3
+Wire Wire Line
+	5100 3500 5100 3300
+Wire Wire Line
+	4500 4000 5100 4000
+Wire Wire Line
+	5100 4000 5100 3500
+Wire Wire Line
+	4600 3500 5100 3500
+Connection ~ 5100 3500
+Text Label 5100 3500 0    10   ~ 0
++3V3
+Wire Wire Line
+	6000 3500 6300 3500
+Wire Wire Line
+	6000 3300 6000 3500
+Wire Wire Line
+	6000 3500 6000 3600
+Wire Wire Line
+	6300 3500 6300 3600
+Wire Wire Line
+	6700 3500 6700 3600
+Wire Wire Line
+	7000 3500 7000 3600
+Wire Wire Line
+	6300 3500 6700 3500
+Wire Wire Line
+	6700 3500 7000 3500
+Connection ~ 6000 3500
+Connection ~ 6300 3500
+Connection ~ 6700 3500
+Text Label 6000 3500 0    10   ~ 0
++3V3
+Wire Wire Line
+	8100 2200 8100 2400
+Wire Wire Line
+	8100 2400 9500 2400
+Text Label 8100 2200 0    10   ~ 0
++5V
+Wire Wire Line
+	5100 2200 5100 2400
+Wire Wire Line
+	4500 2900 5100 2900
+Wire Wire Line
+	5100 2900 5100 2400
+Wire Wire Line
+	4600 2400 5100 2400
+Connection ~ 5100 2400
+Text Label 5100 2200 0    10   ~ 0
++5V
+Wire Wire Line
+	6000 2400 6300 2400
+Wire Wire Line
+	6300 2400 6700 2400
+Wire Wire Line
+	6700 2400 7000 2400
+Wire Wire Line
+	6000 2200 6000 2400
+Wire Wire Line
+	6000 2400 6000 2500
+Wire Wire Line
+	6300 2500 6300 2400
+Wire Wire Line
+	6700 2400 6700 2500
+Wire Wire Line
+	7000 2500 7000 2400
+Connection ~ 6000 2400
+Connection ~ 6300 2400
+Connection ~ 6700 2400
+Text Label 6000 2400 0    10   ~ 0
++5V
+Wire Wire Line
+	8100 4500 8100 4600
+Wire Wire Line
+	8100 4600 9500 4600
+Text Label 8100 4500 0    10   ~ 0
++5V/1
+Wire Wire Line
+	4900 5300 5100 5300
+Wire Wire Line
+	5100 5300 5100 4500
+Text Label 4900 5300 0    10   ~ 0
++5V/1
+Wire Wire Line
+	6000 4500 6000 4700
+Text Label 6000 4500 0    10   ~ 0
++5V/1
+$Comp
+L power-supply-eagle-import:A3L-LOC #FRAME1
+U 1 0 2E43F6B52C66A4AE
+P 900 10700
+F 0 "#FRAME1" H 900 10700 50  0001 C CNN
+F 1 "D1" H 900 10700 50  0001 C CNN
+F 2 "" H 900 10700 50  0001 C CNN
+F 3 "" H 900 10700 50  0001 C CNN
+	1    900  10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+15V #P+01
+U 1 0 93600057BCDF72C5
+P 2500 900
+F 0 "#P+01" H 2500 900 50  0001 C CNN
+F 1 "+15V" V 2400 700 59  0000 L BNN
+F 2 "" H 2500 900 50  0001 C CNN
+F 3 "" H 2500 900 50  0001 C CNN
+	1    2500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:-15V #P-01
+U 1 0 C18889E4A0E12CB
+P 2500 1700
+F 0 "#P-01" H 2500 1700 50  0001 C CNN
+F 1 "-15V" V 2400 1600 59  0000 L BNN
+F 2 "" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND01
+U 1 0 6F68935FDB8695AC
+P 2700 1700
+F 0 "#GND01" H 2700 1700 50  0001 C CNN
+F 1 "GND" H 2600 1600 59  0000 L BNN
+F 2 "" H 2700 1700 50  0001 C CNN
+F 3 "" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+3V3 #+3V01
+U 1 0 B2DE5E0C406B5002
+P 8100 3200
+F 0 "#+3V01" H 8100 3200 50  0001 C CNN
+F 1 "+3V3" V 8000 3000 59  0000 L BNN
+F 2 "" H 8100 3200 50  0001 C CNN
+F 3 "" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V #P+02
+U 1 0 CA948EF4339DE9D3
+P 8100 2100
+F 0 "#P+02" H 8100 2100 50  0001 C CNN
+F 1 "+5V" V 8000 1900 59  0000 L BNN
+F 2 "" H 8100 2100 50  0001 C CNN
+F 3 "" H 8100 2100 50  0001 C CNN
+	1    8100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND02
+U 1 0 350FEA2913A376EC
+P 7900 5200
+F 0 "#GND02" H 7900 5200 50  0001 C CNN
+F 1 "GND" H 7800 5100 59  0000 L BNN
+F 2 "" H 7900 5200 50  0001 C CNN
+F 3 "" H 7900 5200 50  0001 C CNN
+	1    7900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+15V #P+03
+U 1 0 DC184ABA00F05DF6
+P 8100 900
+F 0 "#P+03" H 8100 900 50  0001 C CNN
+F 1 "+15V" V 8000 700 59  0000 L BNN
+F 2 "" H 8100 900 50  0001 C CNN
+F 3 "" H 8100 900 50  0001 C CNN
+	1    8100 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:-15V #P-02
+U 1 0 BD014821C2D528AC
+P 8100 1700
+F 0 "#P-02" H 8100 1700 50  0001 C CNN
+F 1 "-15V" V 8000 1600 59  0000 L BNN
+F 2 "" H 8100 1700 50  0001 C CNN
+F 3 "" H 8100 1700 50  0001 C CNN
+	1    8100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND03
+U 1 0 21A7002F7679BDCC
+P 3800 3000
+F 0 "#GND03" H 3800 3000 50  0001 C CNN
+F 1 "GND" H 3700 2900 59  0000 L BNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND04
+U 1 0 4B4BE4C0D896219B
+P 3800 4100
+F 0 "#GND04" H 3800 4100 50  0001 C CNN
+F 1 "GND" H 3700 4000 59  0000 L BNN
+F 2 "" H 3800 4100 50  0001 C CNN
+F 3 "" H 3800 4100 50  0001 C CNN
+	1    3800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND05
+U 1 0 D2D9FA1DEF27308A
+P 3800 6400
+F 0 "#GND05" H 3800 6400 50  0001 C CNN
+F 1 "GND" H 3700 6300 59  0000 L BNN
+F 2 "" H 3800 6400 50  0001 C CNN
+F 3 "" H 3800 6400 50  0001 C CNN
+	1    3800 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V/1 #SUPPLY01
+U 1 0 57B2A199E46721A6
+P 8100 4400
+F 0 "#SUPPLY01" H 8100 4400 50  0001 C CNN
+F 1 "+5V/1" H 7975 4525 59  0000 L BNN
+F 2 "" H 8100 4400 50  0001 C CNN
+F 3 "" H 8100 4400 50  0001 C CNN
+	1    8100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V #P+04
+U 1 0 9CDE3F88A7FDB2D8
+P 5100 2100
+F 0 "#P+04" H 5100 2100 50  0001 C CNN
+F 1 "+5V" V 5000 1900 59  0000 L BNN
+F 2 "" H 5100 2100 50  0001 C CNN
+F 3 "" H 5100 2100 50  0001 C CNN
+	1    5100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+3V3 #+3V02
+U 1 0 9A50822337D36547
+P 5100 3200
+F 0 "#+3V02" H 5100 3200 50  0001 C CNN
+F 1 "+3V3" V 5000 3000 59  0000 L BNN
+F 2 "" H 5100 3200 50  0001 C CNN
+F 3 "" H 5100 3200 50  0001 C CNN
+	1    5100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V #P+05
+U 1 0 708E00B833ACA7EC
+P 6000 2100
+F 0 "#P+05" H 6000 2100 50  0001 C CNN
+F 1 "+5V" V 5900 1900 59  0000 L BNN
+F 2 "" H 6000 2100 50  0001 C CNN
+F 3 "" H 6000 2100 50  0001 C CNN
+	1    6000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND06
+U 1 0 714A278CA07C0193
+P 6000 3000
+F 0 "#GND06" H 6000 3000 50  0001 C CNN
+F 1 "GND" H 5900 2900 59  0000 L BNN
+F 2 "" H 6000 3000 50  0001 C CNN
+F 3 "" H 6000 3000 50  0001 C CNN
+	1    6000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+15V #P+06
+U 1 0 5DDE0B8BB0F39303
+P 2500 2100
+F 0 "#P+06" H 2500 2100 50  0001 C CNN
+F 1 "+15V" V 2400 1900 59  0000 L BNN
+F 2 "" H 2500 2100 50  0001 C CNN
+F 3 "" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:-15V #P-03
+U 1 0 47AB478B034A1A5F
+P 2500 3700
+F 0 "#P-03" H 2500 3700 50  0001 C CNN
+F 1 "-15V" V 2400 3600 59  0000 L BNN
+F 2 "" H 2500 3700 50  0001 C CNN
+F 3 "" H 2500 3700 50  0001 C CNN
+	1    2500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND07
+U 1 0 C51381239CDE76EF
+P 2900 3000
+F 0 "#GND07" H 2900 3000 50  0001 C CNN
+F 1 "GND" H 2800 2900 59  0000 L BNN
+F 2 "" H 2900 3000 50  0001 C CNN
+F 3 "" H 2900 3000 50  0001 C CNN
+	1    2900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND08
+U 1 0 167E2C6ADF24F9E8
+P 6000 4100
+F 0 "#GND08" H 6000 4100 50  0001 C CNN
+F 1 "GND" H 5900 4000 59  0000 L BNN
+F 2 "" H 6000 4100 50  0001 C CNN
+F 3 "" H 6000 4100 50  0001 C CNN
+	1    6000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+3V3 #+3V03
+U 1 0 39E80044A56F219E
+P 6000 3200
+F 0 "#+3V03" H 6000 3200 50  0001 C CNN
+F 1 "+3V3" V 5900 3000 59  0000 L BNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V/1 #SUPPLY02
+U 1 0 484E0C833EFDB7C
+P 6000 4400
+F 0 "#SUPPLY02" H 6000 4400 50  0001 C CNN
+F 1 "+5V/1" H 5875 4525 59  0000 L BNN
+F 2 "" H 6000 4400 50  0001 C CNN
+F 3 "" H 6000 4400 50  0001 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND09
+U 1 0 92D8EA4928DF91D
+P 6000 5200
+F 0 "#GND09" H 6000 5200 50  0001 C CNN
+F 1 "GND" H 5900 5100 59  0000 L BNN
+F 2 "" H 6000 5200 50  0001 C CNN
+F 3 "" H 6000 5200 50  0001 C CNN
+	1    6000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:+5V/1 #SUPPLY03
+U 1 0 C23B2A6DD5692080
+P 5100 4400
+F 0 "#SUPPLY03" H 5100 4400 50  0001 C CNN
+F 1 "+5V/1" H 4975 4525 59  0000 L BNN
+F 2 "" H 5100 4400 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:VREF-REF02-MAX6350 IC3
+U 1 0 B33006915ED25CA7
+P 4300 5400
+F 0 "IC3" H 3900 6100 59  0000 L BNN
+F 1 "VREF-REF02-MAX6350" H 3900 4700 59  0000 L BNN
+F 2 "power-supply:PDIP-8" H 4300 5400 50  0001 C CNN
+F 3 "" H 4300 5400 50  0001 C CNN
+	1    4300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:SMB-50OHM RP0
+U 1 0 5401BC33185282E2
+P 9700 4700
+F 0 "RP0" H 9600 4900 59  0000 L BNN
+F 1 "SMB-50OHM" V 10300 4300 59  0000 L BNN
+F 2 "power-supply:B-30" H 9700 4700 50  0001 C CNN
+F 3 "" H 9700 4700 50  0001 C CNN
+	1    9700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:WAGO-3 SP0
+U 1 0 8B95E7F162F13113
+P 9700 1300
+F 0 "SP0" H 9600 1600 59  0000 L BNN
+F 1 "WAGO-3" V 10100 1100 59  0000 L BNN
+F 2 "power-supply:WAGO-3" H 9700 1300 50  0001 C CNN
+F 3 "" H 9700 1300 50  0001 C CNN
+	1    9700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:WAGO-3 SP1
+U 1 0 AA76E99B8A50F2F1
+P 9700 2500
+F 0 "SP1" H 9600 2800 59  0000 L BNN
+F 1 "WAGO-3" V 10100 2300 59  0000 L BNN
+F 2 "power-supply:WAGO-3" H 9700 2500 50  0001 C CNN
+F 3 "" H 9700 2500 50  0001 C CNN
+	1    9700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:WAGO-3 PP0
+U 1 0 CCDF129A403579FA
+P 1500 1300
+F 0 "PP0" H 1400 1600 59  0000 L BNN
+F 1 "WAGO-3" V 1900 1100 59  0000 L BNN
+F 2 "power-supply:WAGO-3" H 1500 1300 50  0001 C CNN
+F 3 "" H 1500 1300 50  0001 C CNN
+	1    1500 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:R-TRIMM3296Y R1
+U 1 0 42E73D374B3B8125
+P 4300 2900
+F 0 "R1" V 4065 2750 59  0000 L BNN
+F 1 "1k" V 4150 2750 59  0000 L BNN
+F 2 "power-supply:RTRIM3296Y" H 4300 2900 50  0001 C CNN
+F 3 "" H 4300 2900 50  0001 C CNN
+	1    4300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power-supply-eagle-import:R-TRIMM3296Y R2
+U 1 0 739C9E2D733DB3B0
+P 4300 4000
+F 0 "R2" V 4065 3850 59  0000 L BNN
+F 1 "1k" V 4150 3850 59  0000 L BNN
+F 2 "power-supply:RTRIM3296Y" H 4300 4000 50  0001 C CNN
+F 3 "" H 4300 4000 50  0001 C CNN
+	1    4300 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND010
+U 1 0 F47101845C69E3
+P 8500 1700
+F 0 "#GND010" H 8500 1700 50  0001 C CNN
+F 1 "GND" H 8400 1600 59  0000 L BNN
+F 2 "" H 8500 1700 50  0001 C CNN
+F 3 "" H 8500 1700 50  0001 C CNN
+	1    8500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:GND #GND011
+U 1 0 25F2C17319DA8D48
+P 8500 2800
+F 0 "#GND011" H 8500 2800 50  0001 C CNN
+F 1 "GND" H 8400 2700 59  0000 L BNN
+F 2 "" H 8500 2800 50  0001 C CNN
+F 3 "" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP0
+U 1 0 7BF03055E16221DD
+P 1500 3100
+F 0 "CP0" H 1545 3119 59  0000 L BNN
+F 1 "10uF" H 1545 2919 59  0000 L BNN
+F 2 "power-supply:B45181B" H 1500 3100 50  0001 C CNN
+F 3 "" H 1500 3100 50  0001 C CNN
+	1    1500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP1
+U 1 0 628E0C645BBBACCB
+P 1500 2600
+F 0 "CP1" H 1545 2619 59  0000 L BNN
+F 1 "10uF" H 1545 2419 59  0000 L BNN
+F 2 "power-supply:B45181B" H 1500 2600 50  0001 C CNN
+F 3 "" H 1500 2600 50  0001 C CNN
+	1    1500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP2
+U 1 0 232373E5A61855FA
+P 2900 2600
+F 0 "CP2" H 2945 2619 59  0000 L BNN
+F 1 "2.2uF" H 2945 2419 59  0000 L BNN
+F 2 "power-supply:B45181B" H 2900 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP11
+U 1 0 5AE160A2572782C5
+P 6000 2600
+F 0 "CP11" H 6045 2619 59  0000 L BNN
+F 1 "10uF" H 6045 2419 59  0000 L BNN
+F 2 "power-supply:B45181B" H 6000 2600 50  0001 C CNN
+F 3 "" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP12
+U 1 0 77F0D225A07F581B
+P 6700 2600
+F 0 "CP12" H 6745 2619 59  0000 L BNN
+F 1 "10uF" H 6745 2419 59  0000 L BNN
+F 2 "power-supply:B45181B" H 6700 2600 50  0001 C CNN
+F 3 "" H 6700 2600 50  0001 C CNN
+	1    6700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP21
+U 1 0 3A44C884912EDEBC
+P 6000 3700
+F 0 "CP21" H 6045 3719 59  0000 L BNN
+F 1 "10uF" H 6045 3519 59  0000 L BNN
+F 2 "power-supply:B45181B" H 6000 3700 50  0001 C CNN
+F 3 "" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP31
+U 1 0 861E4BF0E1A32566
+P 6000 4800
+F 0 "CP31" H 6045 4819 59  0000 L BNN
+F 1 "2.2uF" H 6045 4619 59  0000 L BNN
+F 2 "power-supply:B45181B" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C1
+U 1 0 676FA0053E9ECBAC
+P 1800 2600
+F 0 "C1" H 1860 2615 59  0000 L BNN
+F 1 "100nF" H 1860 2415 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C2
+U 1 0 E0584367761BF58F
+P 2200 2600
+F 0 "C2" H 2260 2615 59  0000 L BNN
+F 1 "100nF" H 2260 2415 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 2200 2600 50  0001 C CNN
+F 3 "" H 2200 2600 50  0001 C CNN
+	1    2200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C3
+U 1 0 F8B16F2E15F46D77
+P 2500 2600
+F 0 "C3" H 2560 2615 59  0000 L BNN
+F 1 "100nF" H 2560 2415 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 2500 2600 50  0001 C CNN
+F 3 "" H 2500 2600 50  0001 C CNN
+	1    2500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C0
+U 1 0 75B5901AE6B47D7E
+P 1800 3100
+F 0 "C0" H 1860 3115 59  0000 L BNN
+F 1 "100nF" H 1860 2915 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 1800 3100 50  0001 C CNN
+F 3 "" H 1800 3100 50  0001 C CNN
+	1    1800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C11
+U 1 0 7CF953C646744172
+P 6300 2600
+F 0 "C11" H 6360 2615 59  0000 L BNN
+F 1 "100nF" H 6360 2415 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 6300 2600 50  0001 C CNN
+F 3 "" H 6300 2600 50  0001 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C12
+U 1 0 1B47B8954D37E82F
+P 7000 2600
+F 0 "C12" H 7060 2615 59  0000 L BNN
+F 1 "100nF" H 7060 2415 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 7000 2600 50  0001 C CNN
+F 3 "" H 7000 2600 50  0001 C CNN
+	1    7000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C21
+U 1 0 BCE1B0F116E29A2C
+P 6300 3700
+F 0 "C21" H 6360 3715 59  0000 L BNN
+F 1 "100nF" H 6360 3515 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:LM317TS IC1
+U 1 0 87CC051B5784E3C9
+P 4300 2400
+F 0 "IC1" H 4400 2100 59  0000 L BNN
+F 1 "LM317" H 4400 2000 59  0000 L BNN
+F 2 "power-supply:317TS" H 4300 2400 50  0001 C CNN
+F 3 "" H 4300 2400 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:LM317TS IC2
+U 1 0 A895066E056AB634
+P 4300 3500
+F 0 "IC2" H 4400 3200 59  0000 L BNN
+F 1 "LM317" H 4400 3100 59  0000 L BNN
+F 2 "power-supply:317TS" H 4300 3500 50  0001 C CNN
+F 3 "" H 4300 3500 50  0001 C CNN
+	1    4300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:DINA-DOC #FRAME2
+U 1 0 5E0323DB1B1C9BAE
+P 1100 10500
+F 0 "#FRAME2" H 1100 10500 50  0001 C CNN
+F 1 "DF21" H 1100 10500 50  0001 C CNN
+F 2 "" H 1100 10500 50  0001 C CNN
+F 3 "" H 1100 10500 50  0001 C CNN
+	1    1100 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:CPOL-EUB45181B CP22
+U 1 0 1AA075BCB361A094
+P 6700 3700
+F 0 "CP22" H 6745 3719 59  0000 L BNN
+F 1 "10uF" H 6745 3519 59  0000 L BNN
+F 2 "power-supply:B45181B" H 6700 3700 50  0001 C CNN
+F 3 "" H 6700 3700 50  0001 C CNN
+	1    6700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply-eagle-import:C-EU050-025X075 C22
+U 1 0 6DA554679DAD5B4
+P 7000 3700
+F 0 "C22" H 7060 3715 59  0000 L BNN
+F 1 "100nF" H 7060 3515 59  0000 L BNN
+F 2 "power-supply:C050-025X075" H 7000 3700 50  0001 C CNN
+F 3 "" H 7000 3700 50  0001 C CNN
+	1    7000 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 8900 1200 0    59   ~ 0
+VDD_+15V
+Text Notes 8900 1300 0    59   ~ 0
+AGND
+Text Notes 8900 1400 0    59   ~ 0
+VSS_-15V
+Text Notes 8900 2400 0    59   ~ 0
+VCC_+5V
+Text Notes 8900 2500 0    59   ~ 0
+DGND
+Text Notes 8900 3500 0    59   ~ 0
+VDD_+3.3-4V
+Text Notes 8900 4600 0    59   ~ 0
+VREF
+Text Notes 7800 2600 0    59   ~ 0
+connect AGND and DGND at ONE (~) point
+Text Notes 8400 1900 0    59   ~ 0
+AGND
+Text Notes 8400 3000 0    59   ~ 0
+DGND
+Text Notes 12400 10000 0    85   ~ 0
+power-supply
+Text Notes 12400 10200 0    85   ~ 0
+Solèr, Piegsa, Kirch
+Text Notes 12400 10400 0    85   ~ 0
+rev. 04, 2013
+$EndSCHEMATC

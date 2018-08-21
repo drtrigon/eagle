@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name addressing-auto-eagle-import)(type Legacy)(uri ${KIPRJMOD}/addressing-auto-eagle-import.lib)(options "")(descr ""))
+)

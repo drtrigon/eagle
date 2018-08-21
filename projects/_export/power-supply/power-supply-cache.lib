@@ -1,0 +1,321 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# power-supply-eagle-import_+15V
+#
+DEF power-supply-eagle-import_+15V #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_+15V" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 0 90 -50 -25 N
+P 2 1 0 0 50 -75 0 0 N
+P 2 1 0 0 50 -25 0 90 N
+X +15V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_+3V3
+#
+DEF power-supply-eagle-import_+3V3 #+3V3 0 40 Y Y 1 L P
+F0 "#+3V3" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_+3V3" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+X +3V3 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_+5V
+#
+DEF power-supply-eagle-import_+5V #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_+5V" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+X +5V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_+5V_1
+#
+DEF power-supply-eagle-import_+5V_1 #SUPPLY 0 40 Y Y 1 L P
+F0 "#SUPPLY" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_+5V_1" -125 125 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 50 50 1 0 10 N
+P 2 1 0 0 -25 50 25 50 N
+P 2 1 0 0 0 25 0 75 N
+X +5V/1 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_-15V
+#
+DEF power-supply-eagle-import_-15V #P- 0 40 Y Y 1 L P
+F0 "#P-" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_-15V" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 25 0 -90 N
+P 2 1 0 0 -50 75 0 0 N
+P 2 1 0 0 0 -90 50 25 N
+P 2 1 0 0 0 0 50 75 N
+X -15V 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_A3L-LOC
+#
+DEF ~power-supply-eagle-import_A3L-LOC #FRAME 0 40 Y Y 1 L N
+F0 "#FRAME" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_A3L-LOC" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 13550 600 100 0 1 0 >DRAWING_NAME Normal 0 L B
+T 0 13550 400 90 0 1 0 >LAST_DATE_TIME Normal 0 L B
+T 0 14075 200 100 0 1 0 >SHEET Normal 0 L B
+T 0 13540 195 100 0 1 0 Sheet: Normal 0 L B
+P 2 1 0 0 11350 150 11350 950 N
+P 2 1 0 0 11350 150 13475 150 N
+P 2 1 0 0 11350 950 13475 950 N
+P 2 1 0 0 13475 150 14700 150 N
+P 2 1 0 0 13475 350 13475 150 N
+P 2 1 0 0 13475 350 13475 550 N
+P 2 1 0 0 13475 550 13475 750 N
+P 2 1 0 0 13475 550 15100 550 N
+P 2 1 0 0 13475 750 13475 950 N
+P 2 1 0 0 13475 750 15100 750 N
+P 2 1 0 0 13475 950 15100 950 N
+P 2 1 0 0 14700 150 14700 350 N
+P 2 1 0 0 14700 150 15100 150 N
+P 2 1 0 0 14700 350 13475 350 N
+P 2 1 0 0 14700 350 15100 350 N
+P 2 1 0 0 15100 150 15100 350 N
+P 2 1 0 0 15100 350 15100 550 N
+P 2 1 0 0 15100 550 15100 750 N
+P 2 1 0 0 15100 750 15100 950 N
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_C-EU050-025X075
+#
+DEF power-supply-eagle-import_C-EU050-025X075 C 0 40 Y Y 1 L N
+F0 "C" 60 15 59 H V L BNN
+F1 "power-supply-eagle-import_C-EU050-025X075" 60 -185 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -80 -80 80 -60 1 0 0 F
+S -80 -40 80 -20 1 0 0 F
+P 2 1 0 0 0 -100 0 -80 N
+P 2 1 0 0 0 0 0 -20 N
+X 1 1 0 100 100 D 0 0 1 0 P
+X 2 2 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_CPOL-EUB45181B
+#
+DEF power-supply-eagle-import_CPOL-EUB45181B C 0 40 Y Y 1 L N
+F0 "C" 45 19 59 H V L BNN
+F1 "power-supply-eagle-import_CPOL-EUB45181B" 45 -181 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 900 -23 16 42 0 1 0 + Normal 0 L B
+S -65 -100 65 -65 1 0 0 F
+P 2 1 0 0 -60 -35 60 -35 N
+P 2 1 0 0 -60 0 -60 -35 N
+P 2 1 0 0 -60 0 60 0 N
+P 2 1 0 0 60 -35 60 0 N
+X + + 0 100 100 D 0 0 1 0 P
+X - - 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_DINA-DOC
+#
+DEF ~power-supply-eagle-import_DINA-DOC #FRAME 0 40 Y Y 1 L N
+F0 "#FRAME" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_DINA-DOC" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 2110 74 63 0 1 0 >DRAWING_NAME Normal 0 L B
+T 0 3640 75 59 0 1 0 >LAST_DATE_TIME Normal 0 L B
+T 0 3345 75 59 0 1 0 >SHEET Normal 0 L B
+T 0 2025 1475 46 0 1 0 Bearb. Normal 0 L B
+T 0 3050 1275 59 0 1 0 Benennung Normal 0 L B
+T 0 3050 75 59 0 1 0 Blatt Normal 0 L B
+T 0 2050 1275 46 0 1 0 Gepr. Normal 0 L B
+T 0 1725 75 59 0 1 0 Name Normal 0 L B
+T 0 2725 1675 59 0 1 0 Name Normal 0 L B
+T 0 50 75 59 0 1 0 Rev Normal 0 L B
+T 0 1350 75 59 0 1 0 Tag Normal 0 L B
+T 0 2400 1675 59 0 1 0 Tag Normal 0 L B
+T 0 3050 675 59 0 1 0 Zeichnungs-Nr. Normal 0 L B
+T 0 2075 700 42 0 1 0 "zu Anlage" Normal 0 L B
+T 0 2075 1100 42 0 1 0 "zu Gerät" Normal 0 L B
+T 0 350 75 59 0 1 0 Änderungs-Nr. Normal 0 L B
+P 2 1 0 0 0 0 4800 0 N
+P 2 1 0 0 0 400 2000 400 N
+P 2 1 0 0 0 800 2000 800 N
+P 2 1 0 0 0 1200 2000 1200 N
+P 2 1 0 0 0 1600 3000 1600 N
+P 2 1 0 0 0 1800 0 15 N
+P 2 1 0 0 300 5 300 1800 N
+P 2 1 0 0 1200 1800 1200 0 N
+P 2 1 0 0 1600 0 1600 1800 N
+P 2 1 0 0 2000 10 2001 0 N
+P 2 1 0 0 2000 200 0 200 N
+P 2 1 0 0 2000 200 2000 10 N
+P 2 1 0 0 2000 600 0 600 N
+P 2 1 0 0 2000 800 2000 200 N
+P 2 1 0 0 2000 800 4785 800 N
+P 2 1 0 0 2000 1000 0 1000 N
+P 2 1 0 0 2000 1200 2000 800 N
+P 2 1 0 0 2000 1800 2000 1200 N
+P 2 1 0 0 2300 1800 2300 1200 N
+P 2 1 0 0 2700 1200 2700 1800 N
+P 2 1 0 0 3000 15 3000 1200 N
+P 2 1 0 0 3000 1200 2000 1200 N
+P 2 1 0 0 3000 1200 3000 1400 N
+P 2 1 0 0 3000 1400 0 1400 N
+P 2 1 0 0 3000 1400 3000 1800 N
+P 2 1 0 0 3000 1400 4785 1400 N
+P 2 1 0 0 4785 200 2000 200 N
+P 2 1 0 0 4785 1800 0 1800 N
+P 2 1 0 0 4800 0 4800 1800 N
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_GND
+#
+DEF power-supply-eagle-import_GND #GND 0 40 Y Y 1 L P
+F0 "#GND" 0 0 50 H I C CNN
+F1 "power-supply-eagle-import_GND" -100 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 0 75 0 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_LM317TS
+#
+DEF power-supply-eagle-import_LM317TS IC 0 40 Y Y 1 L N
+F0 "IC" 100 -300 59 H V L BNN
+F1 "power-supply-eagle-import_LM317TS" 100 -400 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -80 -170 51 0 1 0 ADJ Normal 0 L B
+T 0 -175 -25 51 0 1 0 IN Normal 0 L B
+T 0 5 -25 51 0 1 0 OUT Normal 0 L B
+P 2 1 0 0 -200 -200 200 -200 N
+P 2 1 0 0 -200 100 -200 -200 N
+P 2 1 0 0 200 -200 200 100 N
+P 2 1 0 0 200 100 -200 100 N
+X ADJ 1 0 -300 100 U 0 0 1 0 I
+X OUT 2 300 0 100 L 0 0 1 0 P
+X IN 3 -300 0 100 R 0 0 1 0 I
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_R-TRIMM3296Y
+#
+DEF power-supply-eagle-import_R-TRIMM3296Y R 0 40 Y Y 1 L N
+F0 "R" -235 -150 59 V V L BNN
+F1 "power-supply-eagle-import_R-TRIMM3296Y" -150 -150 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 -100 -100 -20 N
+P 2 1 0 0 -100 -20 -120 -60 N
+P 2 1 0 0 -100 -20 -80 -60 N
+P 2 1 0 0 -90 50 -65 95 N
+P 2 1 0 0 -30 -100 30 -100 N
+P 2 1 0 0 -30 100 -30 -100 N
+P 2 1 0 0 0 100 -30 100 N
+P 2 1 0 0 0 100 0 200 N
+P 2 1 0 0 30 -100 30 100 N
+P 2 1 0 0 30 100 0 100 N
+P 2 1 0 0 65 0 -74 69 N
+P 2 1 0 0 100 0 65 0 N
+X A 1 0 -200 100 U 50 0 1 0 P
+X S 2 200 0 100 L 50 0 1 0 P
+X E 3 0 200 100 D 50 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_SMB-50OHM
+#
+DEF power-supply-eagle-import_SMB-50OHM ~ 0 40 Y Y 1 L N
+F0 "" -100 200 59 H V L BNN
+F1 "power-supply-eagle-import_SMB-50OHM" 600 -400 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 150 50 150 N
+P 2 1 0 0 50 -450 -100 -450 N
+P 2 1 0 0 50 150 50 -450 N
+X SIGNAL$1 P$1 -200 100 200 R 0 50 1 0 U
+X SHIELD$2 P$2 -200 -100 200 R 0 50 1 0 U
+X SHIELD$3 P$3 -200 -200 200 R 0 0 1 0 U
+X SHIELD$4 P$4 -200 -300 200 R 0 0 1 0 U
+X SHIELD$5 P$5 -200 -400 200 R 0 0 1 0 U
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_VREF-REF02-MAX6350
+#
+DEF power-supply-eagle-import_VREF-REF02-MAX6350 ~ 0 40 Y Y 1 L N
+F0 "" -400 700 59 H V L BNN
+F1 "power-supply-eagle-import_VREF-REF02-MAX6350" -400 -700 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -400 -600 -400 600 N
+P 2 1 0 0 -400 600 400 600 N
+P 2 1 0 0 400 -600 -400 -600 N
+P 2 1 0 0 400 600 400 -600 N
+X GND$4 GND$4 0 -800 200 U 0 50 1 0 U
+X NR$3 NR$3 -600 0 200 R 0 50 1 0 U
+X TRIM$5 TRIM$5 600 -100 200 L 0 50 1 0 U
+X V_IN$2 V_IN$2 0 800 200 D 0 50 1 0 U
+X V_OUT$5 V_OUT$6 600 100 200 L 0 50 1 0 U
+ENDDRAW
+ENDDEF
+#
+# power-supply-eagle-import_WAGO-3
+#
+DEF power-supply-eagle-import_WAGO-3 ~ 0 40 Y Y 1 L N
+F0 "" -100 300 59 H V L BNN
+F1 "power-supply-eagle-import_WAGO-3" 400 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 150 50 150 N
+P 2 1 0 0 50 -150 -100 -150 N
+P 2 1 0 0 50 150 50 -150 N
+X P$1 P$1 -200 100 200 R 0 50 1 0 U
+X P$2 P$2 -200 0 200 R 0 50 1 0 U
+X P$3 P$3 -200 -100 200 R 0 50 1 0 U
+ENDDRAW
+ENDDEF
+#
+#End Library

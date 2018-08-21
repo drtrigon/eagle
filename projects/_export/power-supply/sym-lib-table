@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name power-supply-eagle-import)(type Legacy)(uri ${KIPRJMOD}/power-supply-eagle-import.lib)(options "")(descr ""))
+)
