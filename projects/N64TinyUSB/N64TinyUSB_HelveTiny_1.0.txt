@@ -1,4 +1,4 @@
-Partlist exported from /home/travis/build/drtrigon/eagle/projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.sch at 5/20/18 2:38 PM
+Partlist exported from /home/travis/build/drtrigon/eagle/projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.sch at 8/21/18 7:29 AM
 
 Part  Value         Device          Package          Description                                             
 (D1)  1N4150        DIODE-D-2.5     D-2.5            DIODE                                                   
