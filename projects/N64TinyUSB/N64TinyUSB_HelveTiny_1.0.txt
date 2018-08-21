@@ -1,0 +1,27 @@
+Partlist exported from /home/travis/build/drtrigon/eagle/projects/N64TinyUSB/N64TinyUSB_HelveTiny_1.0.sch at 5/20/18 2:38 PM
+
+Part  Value         Device          Package          Description                                             
+(D1)  1N4150        DIODE-D-2.5     D-2.5            DIODE                                                   
+C1    0.1μF         C-EU025-024X044 C025-024X044     CAPACITOR, European symbol                              
+C2    4u7           CPOL-EUE2,5-6E  E2,5-6E          POLARIZED CAPACITOR, European symbol                    
+CTRL1 pin3          PINHD-1X1       1X01             PIN HEADER                                              
+CTRL2 pin2          PINHD-1X1       1X01             PIN HEADER                                              
+D+    pin7          PINHD-1X1       1X01             PIN HEADER                                              
+D-    pin6          PINHD-1X1       1X01             PIN HEADER                                              
+D2    1N4150        DIODE-D-2.5     D-2.5            DIODE                                                   
+D3    1N4150        DIODE-D-2.5     D-2.5            DIODE                                                   
+DUMMY pin           PINHD-1X1       1X01             PIN HEADER                                              
+GND   pin4          PINHD-1X1       1X01             PIN HEADER                                              
+JP1   USBPCB        USBPCB          USB-A-PCB        USB Connectors                                          
+LED   pin5          PINHD-1X1       1X01             PIN HEADER                                              
+LED1  red           LED3MM          LED3MM           LED                                                     
+R1    22/68         R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+R2    22/68         R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+R3    1.5K          R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+R4    1K            R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+R5    1K            R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+R6    1K            R-EU_0207/7     0207/7           RESISTOR, European symbol                               
+RST   pin1          PINHD-1X1       1X01             PIN HEADER                                              
+U1    ATTINY85-20PU ATTINY85-20PU   DIP254P762X533-8 8-bit Microcontroller with In-System Programmable Flash 
+VCC1  pin           PINHD-1X1       1X01             PIN HEADER                                              
+VCC2  pin           PINHD-1X1       1X01             PIN HEADER                                              
