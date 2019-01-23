@@ -1,0 +1,31 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Ultra_RBBB_V01
+*Date=00:04:45
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;100nF;100 mil [THT, multilayer];31.8911;-8.43839;0;Bottom;C3
+2;;THT;15.2911;-7.8034;0;Bottom;XTAL1
+3;;;19.125;-12.3161;0;Bottom;TXT1
+4;;THT;1.41111;-11.6134;0;Bottom;PWR
+5;;THT;28.0811;-14.1534;90;Bottom;J4
+6;;dip;20.4611;-7.80339;90;Bottom;U1
+7;220;THT;31.8911;-9.07339;0;Bottom;R1
+8;;;21.7491;-2.19776;0;Bottom;TXT1
+9;;THT;39.5111;-7.80339;0;Bottom;PWR1
+10;;THT;1.41111;-2.72339;0;Bottom;PWR2
+11;100nF;100 mil [THT, multilayer];9.03111;-7.80339;90;Bottom;C1
+12;;;21.1296;-12.8478;90;Bottom;TXT1
+13;;;16.1422;-2.7672;90;Bottom;TXT1
+14;;THT;7.76111;-14.1534;90;Bottom;J3
+15;;THT;20.4611;-1.45339;90;Bottom;J2
+16;100nF;100 mil [THT, multilayer];21.7311;-7.80339;90;Bottom;C2
